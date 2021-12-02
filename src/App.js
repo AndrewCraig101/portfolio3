@@ -1,14 +1,12 @@
 
 import ReactDOM from 'react-dom'
 
-import './App.css';
 import Header from './Header.js';
 import About from './About.js';
 import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Contact from './Contact.js';
-
-import 'App.scss';
+import './sass/app.scss';
 
 
 
@@ -25,20 +23,13 @@ import 'App.scss';
 function App() {
   return (
     <div className="appDiv">
-
       <Header />
       <About />
       <Projects />
       <Skills />
       <Contact />
-      
-
     </div>
   );
 }
 
-
 export default App;
-
-
-
