@@ -2,10 +2,9 @@
 // Skills.js
 // Skills.js
 
-// import React, { Component } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-// import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Skills = () => {
     return (
@@ -13,7 +12,7 @@ const Skills = () => {
         <h5></h5>
         <ul>
             <li>
-
+                <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>
                 <p>HTML5</p>
             </li>
             <li>
@@ -46,9 +45,6 @@ const Skills = () => {
   }
   
   export default Skills;
-
-
-//   <FontAwesomeIcon icon="fa-brands fa-html5" />
 
 //   <FontAwesomeIcon icon="fa-brands fa-css3-alt" />
 
