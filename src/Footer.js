@@ -2,13 +2,14 @@
 // Footer.js
 // Footer.js
 
-function footer() {
+const Footer = () => {
     return (
-      <div className="footerDiv">
+      <footer className="footerDiv">
         <p>Built by Andrew Craig. 2021.</p>
-        <div contactLogoDiv>
-        
+        <div contactLogoDiv> 
         </div>
-      </div>
+      </footer>
     );
   }
+
+export default Footer;

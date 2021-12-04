@@ -6,6 +6,7 @@ import About from './About.js';
 import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Contact from './Contact.js';
+import Footer from './Footer.js';
 import './sass/app.scss';
 
 
@@ -22,13 +23,16 @@ import './sass/app.scss';
 
 function App() {
   return (
-    <div className="appDiv">
+    <>
       <Header />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
-    </div>
+      <main>
+        <About />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
 
