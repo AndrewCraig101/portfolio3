@@ -1,14 +1,14 @@
-
+import './scss/styles.scss';
 import ReactDOM from 'react-dom'
 
-import './App.css';
+// import './App.css';
 import Header from './Header.js';
 import About from './About.js';
 import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Contact from './Contact.js';
 
-import 'App.scss';
+
 
 
 
