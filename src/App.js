@@ -1,4 +1,4 @@
-
+import './scss/styles.scss';
 import ReactDOM from 'react-dom'
 
 import Header from './Header.js';
@@ -7,6 +7,7 @@ import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Contact from './Contact.js';
 import Footer from './Footer.js';
+
 import './sass/app.scss';
 
 

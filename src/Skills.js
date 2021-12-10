@@ -9,7 +9,7 @@ import { faHtml5, faGithub } from '@fortawesome/free-brands-svg-icons'
 const Skills = () => {
     return (
       <section className="skills">
-        <h5></h5>
+        <h5>Skills</h5>
         <ul>
             <li>
                 <FontAwesomeIcon icon={faHtml5}></FontAwesomeIcon>

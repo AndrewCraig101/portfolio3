@@ -4,14 +4,14 @@
 
 function contact() {
     return (
-      <div className="contactDiv">
+      <div className="contactBox">
         <h3>Contact</h3>
-        <div className="formDiv">
-            <input type="text"/>
-            <input type="email"/>
+        <div className="formBox">
+            <input type="text" placeholder="Your Name"/>
+            <input type="email" placeholder="Your Email"/>
         </div>
 
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Let's Connect!"></textarea>
 
       </div>
     );

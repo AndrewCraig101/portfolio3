@@ -2,6 +2,9 @@
 // Header.js
 // Header.js
 
+import image from './assets/1.jpeg';
+
+
 const Header = () => {
     return (
         <header>
@@ -13,7 +16,12 @@ const Header = () => {
                     <li><a href="">Contact</a></li>
                 </ul>
             </nav>
-            <img src="" alt=""/>
+            <div className="builtInBox">
+            <p>Built in</p>
+            </div>
+            <div className="heroImgDiv">
+                <img src={image} alt=""/>
+            </div>
             <h1>Andrew Craig</h1>
             <h2>Front End Web Developer</h2>
         </header>

@@ -1,0 +1,86 @@
+
+// HEADER SECTION
+// HEADER SECTION
+// HEADER SECTION
+
+header {
+    width: 100%;
+    background-image: url('../assets/background/b3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .heroImgDiv  {
+        width: 30%; 
+
+        img {
+        width: 100%;
+        }
+    }
+
+
+    nav {
+        width: 100%;
+        margin: 40px 0px;
+        @include center;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 80%;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+    
+}
+
+// ABOUT SECTION
+// ABOUT SECTION
+// ABOUT SECTION
+
+.about {
+    @include center;
+    margin: 20px 0px;
+    background-color: $baseWhite;
+    width: 100%;
+
+    p {
+        width: 50%;
+    }
+
+    
+}
+
+.about:first-child(p) {
+    margin-bottom: 15px;
+}
+
+
+// MEDIA QUERIES
+// MEDIA QUERIES
+// MEDIA QUERIES
+
+@media (max-width: 350px) {
+
+
+}
+
+
