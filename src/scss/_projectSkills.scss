@@ -1,0 +1,185 @@
+
+
+// PROJECT SECTION
+// PROJECT SECTION
+// PROJECT SECTION
+
+.projectSection {
+    width: 100%;
+    @include center;
+    background-color: $offWhite;
+    padding: 60px 0px 40px 0px;
+
+    // div .odd {
+    //     width: 70%;
+    //     align-self: flex-start;
+    // }
+
+    // div .even {
+    //     width: 70%;
+    //     align-self: flex-end;
+    // }
+
+    h3 {
+        margin: 0px 0px 25px 0px;   
+        font-weight: 600;
+    }
+
+    .projectDiv {
+        @include center;
+        margin: 40px 0px 50px 0px;
+        width: 100%;
+
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .reversH4 {
+            text-align: center;
+            
+        }
+    }
+
+    .projectInside {
+        @include center;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+
+        p {
+            span {
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .projectInside > p:first-child {
+        margin: 15px 0px 5px 0px
+}
+
+        .buttonBox a {
+            cursor: pointer;
+            padding: 1.5rem 4rem;
+            background-color: #58cced;
+            border: 0.5px solid rgba(0, 0, 0, .4);
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 1.6rem;
+            transition: all .3s ease;
+            // text-shadow
+        }
+
+
+        .buttonBox a:nth-child(2) {
+            padding: 1.5rem 4.6rem;
+            margin-left: 25px;
+        }
+
+    .buttonBox {
+        width: 40%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .projectImgBox {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    
+}
+
+// SKILLS SECTION
+// SKILLS SECTION
+// SKILLS SECTION
+
+.skills {
+    width: 100%;
+    @include center;
+    flex-direction: column;
+    background-color: $baseWhite;
+    padding: 60px 0px; 
+
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        p {
+            font-size: 2rem;
+        }
+        
+
+        li {
+            margin: 15px 15px;
+            @include center;
+            flex-direction: column;
+
+            .icon {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+// MEDIA QUERIES
+// MEDIA QUERIES
+
+@media (max-width: 900px) {
+
+.projectSection .projectInside {
+        width: 70%;
+        
+        }
+    }
+
+    .buttonBox {
+        width: auto;
+    }
+
+@media (max-width: 480px) {
+
+    .projectDiv {
+        width: 100%;
+    }
+
+.projectSection {
+    
+    .projectInside {
+        width: 100%;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .buttonBox {
+        @include center;
+        align-content: space-around;
+
+    
+        
+    }
+}
+
+.projectSection .buttonBox a:nth-child(2){
+    margin-top: 15px;
+    margin-left: 0px;
+    
+}
+
+}
+

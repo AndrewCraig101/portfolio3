@@ -4,9 +4,11 @@
 
 const Footer = () => {
     return (
-      <footer className="footerDiv">
-        <p>Built by Andrew Craig. 2021.</p>
-        <div contactLogoDiv> 
+      <footer>
+        <div className="wrapper">
+          <p>Built by Andrew Craig - 2021</p>
+          <div contactLogoDiv>
+          </div>
         </div>
       </footer>
     );

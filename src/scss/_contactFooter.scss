@@ -1,0 +1,116 @@
+
+// CONTACT SECTION
+// CONTACT SECTION
+// CONTACT SECTION
+
+.contactBox {
+    @include center;
+    background-color: $offWhite;
+    width: 100%;
+    padding: 60px 0px 100px 0px;
+
+    textarea {
+        width: 96%;
+        padding: 20px;
+        background-color: $baseWhite;
+        border: 1px solid rgba(0, 0, 0, .1);
+        resize: none;
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        @include center;
+        width: 85%;
+        margin: 20px 0px;
+
+        button {
+            cursor: pointer;
+            padding: 1.5rem 4.6rem;
+            margin-top: 30px;
+            background-color: #58cced;
+            border: 0.5px solid rgba(0, 0, 0, .5);
+            text-decoration: none;
+            color: black;
+            font-size: 1.7rem;
+        }
+    }
+
+    .formBox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 20px 0px;
+
+        input {
+            width: 46%;
+            line-height: 2.2;
+            padding: 20px;
+            background-color: $baseWhite;
+            border: 1px solid rgba(0, 0, 0, .1);
+            font-size: 1.5rem;
+        }
+    }
+
+
+}
+
+
+// FOOTER SECTION
+// FOOTER SECTION
+// FOOTER SECTION
+
+footer {
+    background-color: black;
+    width: 100%;
+    @include center;
+    padding: 30px 0px;
+
+    p {
+        color: white;
+        width: 60%;
+        text-align: center;
+    }
+}
+
+// MEDIA QUERIES 
+// MEDIA QUERIES 
+// MEDIA QUERIES 
+
+@media (max-width: 480px) {
+    .contactBox {
+
+        .formBox {
+            width: 80%;
+        }
+
+        textarea {
+            width: 80%;
+        }
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .contactBox {
+
+        .formBox {
+            flex-direction: column;
+
+            input {
+                width: 95%;
+            }
+        }
+
+        .formBox input:nth-child(4) {
+            margin-top: 20px;
+        }
+        // .buttonBox a:nth-child(2)
+    }
+
+    
+}
+
