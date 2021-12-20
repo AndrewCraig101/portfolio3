@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, p {
   margin: 0px;
 }
 
-a {
+a, button {
   font-family: "Roboto Mono", monospace;
 }
 
@@ -249,13 +249,17 @@ h3, h5 {
 
 h4 {
   font-family: "Roboto Mono", monospace;
-  font-size: 1.4rem;
+  font-size: 2.7rem;
   font-weight: normal;
-  text-decoration: underline;
+  padding-bottom: 2px;
 }
 
-h3, h5 {
+h5 {
   font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 3.3rem;
 }
 
 h1, h2 {
@@ -263,16 +267,18 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 h2 {
-  font-size: 2.5 rem;
+  font-size: 3rem;
 }
 
 p {
   font-family: "Roboto Mono", monospace;
-  font-weight: 400;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
 }
 
 .wrapper {
@@ -290,27 +296,97 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1600px;
+  max-width: 1100px;
   width: 100%;
 }
 
-main, body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+html {
+  font-size: 62.5%;
+}
+
+section {
+  padding: 0px 2vh;
+}
+
+textarea:focus,
+input:focus,
+a:focus {
+  outline: 1px solid #58cced;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  outline-offset: 5px;
+}
+
+.projectSection .projectDiv .buttonBox a:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.contactBox textarea:hover, .contactBox .formBox input:hover {
+  border: 1px solid black;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+.skills li:hover {
+  color: #58cced;
+}
+
+.project-list .title a {
+  color: #232324;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border-bottom: solid transparent 5px;
+}
+
+.slider {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 90%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #58cced;
+  width: 0%;
+  -webkit-transition: width 0.5s ease-out;
+  transition: width 0.5s ease-out;
+}
+
+.nombore {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nombore:hover .slider {
   width: 100%;
 }
 
+.slider:hover {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .contactBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,15 +403,20 @@ main, body {
           flex-direction: column;
   background-color: #f5f5f5;
   width: 100%;
-  padding: 30px 0px;
+  padding: 60px 0px 100px 0px;
 }
 .contactBox textarea {
-  width: 50%;
+  width: 96%;
   padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  resize: none;
+  font-size: 1.5rem;
 }
-.contactBox .formBox {
+.contactBox form {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -343,16 +424,44 @@ main, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  margin: 20px 0px;
+}
+.contactBox form button {
+  cursor: pointer;
+  padding: 1.5rem 4.6rem;
+  margin-top: 30px;
+  background-color: #58cced;
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  color: black;
+  font-size: 1.7rem;
+}
+.contactBox .formBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
   margin: 20px 0px;
 }
 .contactBox .formBox input {
   width: 46%;
   line-height: 2.2;
-  padding-left: 10px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
 }
 
 footer {
@@ -371,13 +480,36 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 70px 0px;
+  padding: 30px 0px;
 }
 footer p {
   color: white;
-  width: 20%;
+  width: 60%;
+  text-align: center;
 }
 
+@media (max-width: 480px) {
+  .contactBox .formBox {
+    width: 80%;
+  }
+  .contactBox textarea {
+    width: 80%;
+  }
+}
+@media (max-width: 850px) {
+  .contactBox .formBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBox .formBox input {
+    width: 95%;
+  }
+  .contactBox .formBox input:nth-child(4) {
+    margin-top: 20px;
+  }
+}
 header {
   width: 100%;
   background-image: url("../assets/background/b3.jpg");
@@ -386,16 +518,26 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 60px;
+}
+header div p {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 header .heroImgDiv {
   width: 30%;
@@ -404,7 +546,7 @@ header .heroImgDiv img {
   width: 100%;
 }
 header nav {
-  width: 100%;
+  width: 95%;
   margin: 40px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,18 +573,31 @@ header ul {
       -ms-flex-align: center;
           align-items: center;
   list-style-type: none;
-  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 95%;
+  padding: 0px;
+}
+header ul li {
+  margin: 0 auto;
 }
 header ul a {
   text-decoration: none;
   color: black;
+  font-size: 2.8rem;
+  margin: 4px 10px;
+  display: inline-block;
 }
 header h1 {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  color: black;
+  text-align: center;
 }
 header h2 {
   margin: 0px;
+  color: black;
+  text-align: center;
 }
 
 .about {
@@ -459,18 +614,50 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 0px;
+  padding: 60px 0px 50px 0px;
   background-color: #fafafa;
   width: 100%;
 }
 .about p {
-  width: 50%;
+  width: 70%;
+  text-indent: 40px;
+}
+.about h3 {
+  margin-bottom: 10px;
 }
 
-.about:first-child(p) {
+.about p:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.about h3:nth-child(1) {
   margin-bottom: 15px;
 }
 
+@media (max-width: 480px) {
+  header ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 3.7rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  header ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header ul a {
+    font-size: 2.3rem;
+  }
+}
 .projectSection {
   width: 100%;
   display: -webkit-box;
@@ -487,6 +674,11 @@ header h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f5f5f5;
+  padding: 60px 0px 40px 0px;
+}
+.projectSection h3 {
+  margin: 0px 0px 25px 0px;
+  font-weight: 600;
 }
 .projectSection .projectDiv {
   display: -webkit-box;
@@ -502,8 +694,15 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 20px 0px;
+  margin: 40px 0px 50px 0px;
   width: 100%;
+}
+.projectSection .projectDiv h4 {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.projectSection .projectDiv .reversH4 {
+  text-align: center;
 }
 .projectSection .projectInside {
   display: -webkit-box;
@@ -519,11 +718,46 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 60%;
   text-align: center;
+  margin-bottom: 20px;
+}
+.projectSection .projectInside p span {
+  font-weight: 600;
+}
+.projectSection .projectInside > p:first-child {
+  margin: 15px 0px 5px 0px;
+}
+.projectSection .buttonBox a {
+  cursor: pointer;
+  padding: 1.5rem 4rem;
+  background-color: #58cced;
+  border: 0.5px solid rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 1.6rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.projectSection .buttonBox a:nth-child(2) {
+  padding: 1.5rem 4.6rem;
+  margin-left: 25px;
+}
+.projectSection .buttonBox {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
 }
 .projectSection .projectImgBox {
-  width: 50%;
+  width: 100%;
 }
 .projectSection .projectImgBox img {
   width: 100%;
@@ -546,16 +780,27 @@ header h2 {
           flex-direction: column;
   flex-direction: column;
   background-color: #fafafa;
-  padding: 30px 0px;
+  padding: 60px 0px;
 }
 .skills ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills ul p {
+  font-size: 2rem;
 }
 .skills ul li {
-  margin: 0px 15px;
+  margin: 15px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -570,4 +815,52 @@ header h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   flex-direction: column;
+}
+.skills ul li .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .projectSection .projectInside {
+    width: 70%;
+  }
+}
+.buttonBox {
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  .projectDiv {
+    width: 100%;
+  }
+
+  .projectSection .projectInside {
+    width: 100%;
+  }
+  .projectSection .projectInside div {
+    width: 100%;
+  }
+  .projectSection .buttonBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+
+  .projectSection .buttonBox a:nth-child(2) {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }/*# sourceMappingURL=styles.css.map */

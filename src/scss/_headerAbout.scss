@@ -8,10 +8,19 @@ header {
     background-image: url('../assets/background/b3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include center;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-bottom: 60px;
+
+    div {
+
+        p {
+            color: black;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+    }
 
     .heroImgDiv  {
         width: 30%; 
@@ -23,7 +32,7 @@ header {
 
 
     nav {
-        width: 100%;
+        width: 95%;
         margin: 40px 0px;
         @include center;
     }
@@ -33,21 +42,35 @@ header {
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        width: 80%;
+        flex-wrap: wrap;
+        width: 95%;
+        padding: 0px;
+
+        li {
+            margin: 0 auto;
+        }
 
         a {
             text-decoration: none;
             color: black;
+            font-size: 2.8rem;
+            margin: 4px 10px;
+            display: inline-block;
+            
         }
     }
 
     h1 {
-        margin-top: 15px;
-        margin-bottom: 10px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        color: black;
+        text-align: center;
     }
 
     h2 {
         margin: 0px;
+        color: black;
+        text-align: center;
     }
     
 }
@@ -58,29 +81,59 @@ header {
 
 .about {
     @include center;
-    margin: 20px 0px;
+    padding: 60px 0px 50px 0px;
     background-color: $baseWhite;
     width: 100%;
 
     p {
-        width: 50%;
+        width: 70%;
+        text-indent: 40px;
     }
 
+    h3 {
+        margin-bottom: 10px;
+    }
     
 }
 
-.about:first-child(p) {
+.about p:nth-child(2) {
+    margin-bottom: 17px;
+}
+
+.about h3:nth-child(1) {
     margin-bottom: 15px;
 }
 
-
 // MEDIA QUERIES
 // MEDIA QUERIES
 // MEDIA QUERIES
 
-@media (max-width: 350px) {
+@media (max-width: 480px) {
 
-
+    header ul {
+        justify-content: space-around;
+        width: 90%;
+    }
 }
 
+@media (max-width: 320px) {
 
+    h1 {
+        font-size: 3.7rem;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+    }
+
+    header ul {
+    flex-wrap: wrap; 
+
+
+        a {
+            font-size: 2.3rem;
+            
+        }
+    }
+
+}

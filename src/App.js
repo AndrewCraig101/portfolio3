@@ -7,6 +7,7 @@ import Projects from './Projects.js';
 import Skills from './Skills.js';
 import Contact from './Contact.js';
 import Footer from './Footer.js';
+import Emoji from './Emoji.js'
 
 import './sass/app.scss';
 

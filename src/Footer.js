@@ -5,8 +5,10 @@
 const Footer = () => {
     return (
       <footer>
-        <p>Built by Andrew Craig. 2021.</p>
-        <div contactLogoDiv> 
+        <div className="wrapper">
+          <p>Built by Andrew Craig - 2021</p>
+          <div contactLogoDiv>
+          </div>
         </div>
       </footer>
     );
