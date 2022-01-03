@@ -1,17 +1,9 @@
-// Header.js
-// Header.js
-// Header.js
-
 import image from './assets/1.jpeg';
-
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-
 import { faGithub, faSass, faReact, faJsSquare, faCss3 } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fab, faGithub, faSass, faReact, faJsSquare, faCss3)
-
 
 const Header = () => {
     return (
@@ -26,11 +18,8 @@ const Header = () => {
                         
                     </ul>
                 </nav>
-                {/* <div className="builtInBox">
-                
-                </div> */}
                 <div className="heroImgDiv">
-                    <img src={image} alt=""/>
+                    <img src={image} alt="" />
                 </div>
                 <h1>Andrew Craig</h1>
                 <h2>Front End Web Developer</h2>
@@ -38,6 +27,5 @@ const Header = () => {
         </header>
     )
 }
-
 
 export default Header
