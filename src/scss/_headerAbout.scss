@@ -13,6 +13,22 @@ header {
     align-content: center;
     padding-bottom: 60px;
 
+    .builtInBox {
+    
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .builtInBox > .icon:nth-child(3) {
+        margin-left: 35px;
+    }
+
     div {
 
         p {

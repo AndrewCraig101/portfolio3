@@ -5,6 +5,14 @@
 import image from './assets/1.jpeg';
 
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+import { faGithub, faSass, faReact, faJsSquare, faCss3 } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faGithub, faSass, faReact, faJsSquare, faCss3)
+
+
 const Header = () => {
     return (
         <header>
@@ -18,9 +26,9 @@ const Header = () => {
                         
                     </ul>
                 </nav>
-                <div className="builtInBox">
-                <p>Built with</p>
-                </div>
+                {/* <div className="builtInBox">
+                
+                </div> */}
                 <div className="heroImgDiv">
                     <img src={image} alt=""/>
                 </div>

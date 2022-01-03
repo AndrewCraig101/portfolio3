@@ -2,8 +2,6 @@
 // About.js
 // About.js
 
-import Emoji from './Emoji.js'
-
 const About = () => {
     return (
         
@@ -19,8 +17,5 @@ const About = () => {
     )
 }
 
-
-
 export default About
 
-{/* <Emoji symbol="🐑" label="sheep"/> */}

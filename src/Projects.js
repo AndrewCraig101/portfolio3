@@ -36,7 +36,7 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>A database of NBA teams and players. <span>Javascript, JSModules, API and SCSS.</span></p>
-                    <p>Collaboration with <a href=""></a></p>
+                    {/* <p>Collaboration with <a href=""></a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://nbacodestarsac.netlify.app/">Website</a>
@@ -50,7 +50,7 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>Trivia game with timer. <span>React with API and Firebase.</span> Create multiple player avatars and save to a score leaderboard.</p>
-                    <p>Collaboration with <a href=""></a>, <a href=""></a> and <a href=""></a></p>
+                    {/* <p>Collaboration with <a href=""></a>, <a href=""></a> and <a href=""></a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://triviatimeac.netlify.app/">Website</a>
@@ -64,7 +64,7 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>Inspired by magnetic fridge poetry. Employs <span>drag and drop functionality, form autocomplete from the Datamuse API and Firebase</span>.</p>
-                    <p>Collaboration with <a href="">, </a><a href="">, </a><a href=""> and </a></p>
+                    {/* <p>Collaboration with <a href="">, </a><a href="">, </a><a href=""> and </a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://refrigerationversification.netlify.app/">Website</a>
