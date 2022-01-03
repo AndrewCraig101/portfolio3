@@ -7,8 +7,6 @@ import Skills from './Skills.js';
 import Contact from './Contact.js';
 import Footer from './Footer.js';
 
-import './sass/app.scss';
-
 function App() {
   return (
     <>
