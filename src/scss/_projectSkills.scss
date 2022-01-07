@@ -4,6 +4,9 @@
 // PROJECT SECTION
 // PROJECT SECTION
 
+$aos-distance: 50px; // It has to be above import
+@import 'node_modules/aos/src/sass/aos.scss';
+
 .projectSection {
     width: 100%;
     @include center;
@@ -11,16 +14,9 @@
     padding: 60px 0px 40px 0px;
 
     // Styles to add to the animation in the project section
+    // use nth child here instead
 
-    // div .odd {
-    //     width: 70%;
-    //     align-self: flex-start;
-    // }
-
-    // div .even {
-    //     width: 70%;
-    //     align-self: flex-end;
-    // }
+    
 
     h3 {
         margin: 0px 0px 25px 0px;   

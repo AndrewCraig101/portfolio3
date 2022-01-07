@@ -10,89 +10,89 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 // ADJUSTMENTS
 
-h1, h2, h3, h4, h5, p {
-    margin: 0px;
-    
-}
+    h1, h2, h3, h4, h5, p {
+        margin: 0px;
+        
+    }
 
-// VARIABLES
+    // VARIABLES
 
-$baseWhite: #fafafa;
-$offWhite: #f5f5f5;
-$accent: #58cced;
+    $baseWhite: #fafafa;
+    $offWhite: #f5f5f5;
+    $accent: #58cced;
 
-// $accent: 
+    // $accent: 
 
-// TYPOGRAPHY
+    // TYPOGRAPHY
 
-a, button {
-    font-family: 'Roboto Mono', monospace;
-}
+    a, button {
+        font-family: 'Roboto Mono', monospace;
+    }
 
-h3, h5 {
-    font-family: 'Roboto Mono', monospace;
-}
+    h3, h5 {
+        font-family: 'Roboto Mono', monospace;
+    }
 
-h4 {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 2.7rem;
-    font-weight: normal;
-    padding-bottom: 2px;
-}
+    h4 {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 2.7rem;
+        font-weight: normal;
+        padding-bottom: 2px;
+    }
 
-h5 {
-    font-size: 2.3rem;
-}
+    h5 {
+        font-size: 2.3rem;
+    }
 
-h3 {
-    font-size: 3.8rem;
-}
+    h3 {
+        font-size: 3.8rem;
+    }
 
-h1, h2 {
-    font-family: 'Roboto Mono', monospace;
-    
-}
+    h1, h2 {
+        font-family: 'Roboto Mono', monospace;
+        
+    }
 
-h1 {
-    font-size: 5rem;
-}
+    h1 {
+        font-size: 5rem;
+    }
 
-h2 {
-    font-size: 3rem;
-}
+    h2 {
+        font-size: 3rem;
+    }
 
-p {
-    font-family: 'Roboto Mono', monospace; 
-    font-weight: 300;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-}
+    p {
+        font-family: 'Roboto Mono', monospace; 
+        font-weight: 300;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
 
-// MISC
+    // MISC
 
-@mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;  
-}
+    @mixin center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;  
+    }
 
-// GLOBALS
+    // GLOBALS
 
-.wrapper {
-    margin: 0 auto;
-    @include center;
-    max-width: 1100px;
-    width: 100%;
-}
+    .wrapper {
+        margin: 0 auto;
+        @include center;
+        max-width: 1100px;
+        width: 100%;
+    }
 
-html {
-    font-size: 62.5%;
-}
+    html {
+        font-size: 62.5%;
+    }
 
-section {
-    padding: 0px 2vh;
-}
+    section {
+        padding: 0px 2vh;
+    }
 
 // HOVER AND FOCUS STYLES
 
@@ -108,16 +108,23 @@ section {
         outline-offset: 5px;   
     }
 
+    
     .projectSection .projectDiv .buttonBox a:hover {
         background-color: white;
         border: 1px solid black;
     }
 
+    .contactBox .submitButton:hover {
+        background-color: white;
+        border: 1px solid black;
+        transition: all .3s ease-out;
+    } 
+
     // Input hover styles
 
     .contactBox textarea:hover, .contactBox .formBox input:hover {
-        border: 1px solid black;
-        transition: all 5s ease;
+        border: 1px solid grey;
+        transition: all 0.3s ;
     }
 
     // Icon hover styles
@@ -169,27 +176,27 @@ section {
         -ms-animation: fadeIn linear 1s;
     }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-    
-    @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
+    @keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-moz-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-webkit-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-o-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }
+        
+        @-ms-keyframes fadeIn {
+        0% {opacity:0;}
+        100% {opacity:1;}
+        }

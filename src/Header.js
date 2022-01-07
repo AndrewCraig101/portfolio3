@@ -1,6 +1,3 @@
-// Header.js
-// Header.js
-// Header.js
 
 import image from './assets/1.jpeg';
 
@@ -18,17 +15,15 @@ const Header = () => {
         <header>
             <div className="wrapper">
                 <nav>
-                    <ul>
+                    <ul 
+                    data-aos="fade-up"
+                    >
                         <li><a href="#about" class="nombore"><span>About</span><span class="slider"></span></a></li>
                         <li><a href="#projects" class="nombore"><span>Projects</span><span class="slider"></span></a></li>
                         <li><a href="#skills" class="nombore"><span>Skills</span><span class="slider"></span></a></li>
                         <li><a href="#contact" class="nombore"><span>Contact</span><span class="slider"></span></a></li>
-                        
                     </ul>
                 </nav>
-                {/* <div className="builtInBox">
-                
-                </div> */}
                 <div className="heroImgDiv">
                     <img src={image} alt=""/>
                 </div>
@@ -38,6 +33,5 @@ const Header = () => {
         </header>
     )
 }
-
 
 export default Header

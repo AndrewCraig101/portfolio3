@@ -6,7 +6,7 @@ const Footer = () => {
     return (
       <footer>
         <div className="wrapper">
-          <p>Built in React by Andrew Craig - 2021</p>
+          <p>Built in React by Andrew Craig - 2022</p>
           <div contactLogoDiv>
           </div>
         </div>

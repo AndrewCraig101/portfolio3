@@ -1,6 +1,3 @@
-// Skills.js
-// Skills.js
-// Skills.js
 
 import React from 'react';
 
@@ -63,3 +60,5 @@ const Skills = () => {
 }
 
 export default Skills;
+
+

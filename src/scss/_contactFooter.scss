@@ -57,6 +57,72 @@
 
 }
 
+// CONTACT LOGO BOX
+
+.contactIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 60px;
+
+    .logo {
+        // margin: 0px 40px;
+        @include center;
+
+         .icon {
+                font-size: 5rem;
+                margin: 10px 0px;
+                color: grey;
+            }
+
+        span {
+            font-size: 2rem;
+            color: grey;
+        }
+    }
+}
+
+// Tool tip code 
+
+.tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: white;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: grey transparent transparent transparent;
+        margin-bottom: 20px;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
 // FOOTER SECTION
 // FOOTER SECTION
 // FOOTER SECTION
@@ -78,20 +144,6 @@ footer {
 // MEDIA QUERIES 
 // MEDIA QUERIES 
 
-@media (max-width: 480px) {
-    .contactBox {
-
-        .formBox {
-            width: 80%;
-        }
-
-        textarea {
-            width: 80%;
-        }
-    }
-
-}
-
 @media (max-width: 850px) {
 
     .contactBox {
@@ -108,8 +160,24 @@ footer {
             margin-top: 20px;
         }
         // .buttonBox a:nth-child(2)
-    }
+    }    
+}
 
-    
+    @media (max-width: 480px) {
+        .contactBox {
+
+            .formBox {
+                width: 80%;
+            }
+
+            textarea {
+                width: 80%;
+            }
+
+            .contactIcons {
+                width: 80%;
+            }
+        }
+
 }
 
