@@ -30,7 +30,7 @@ return (
                     </div>
                 </div>
             </div> */}
-            <div className="projectDiv aos-init aos-animate" data-aos="fade-left">
+            <div className="projectDiv" data-aos="fade-left">
                     <h4>NBA Codestars</h4>
                 <div className="projectImgBox">
                     <img src={image3} alt=""/>
@@ -45,7 +45,7 @@ return (
                 </div>
             </div>
             
-            <div className="projectDiv">
+            <div className="projectDiv" data-aos="fade-up-left"> 
                     <h4>Trivia Time</h4>
                 <div className="projectImgBox">
                     <img src={image1} alt=""/>
@@ -60,7 +60,7 @@ return (
                 </div>
             </div>
             
-            <div className="projectDiv">
+            <div className="projectDiv" data-aos="fade-left">
                     <h4 className="reversH4">Refrigeration Versification</h4>
                 <div className="projectImgBox">
                     <img src={image2} alt=""/>
@@ -76,7 +76,7 @@ return (
 
             </div>
             
-            <div className="projectDiv">
+            <div className="projectDiv" data-aos="fade-up-right">
                     <h4>Oscar Finder</h4>
                 <div className="projectImgBox"><img src={image4} alt=""/></div>
                 <div className="projectInside">

@@ -1,7 +1,6 @@
 
 import image from './assets/1.jpeg';
 
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -16,7 +15,9 @@ const Header = () => {
             <div className="wrapper">
                 <nav>
                     <ul 
-                    data-aos="fade-up"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-out"
                     >
                         <li><a href="#about" class="nombore"><span>About</span><span class="slider"></span></a></li>
                         <li><a href="#projects" class="nombore"><span>Projects</span><span class="slider"></span></a></li>
@@ -24,7 +25,11 @@ const Header = () => {
                         <li><a href="#contact" class="nombore"><span>Contact</span><span class="slider"></span></a></li>
                     </ul>
                 </nav>
-                <div className="heroImgDiv">
+                <div className="heroImgDiv" 
+                data-aos="fade-in"
+                data-aos-delay="400"
+                data-aos-easing="ease-out"
+                >
                     <img src={image} alt=""/>
                 </div>
                 <h1>Andrew Craig</h1>
