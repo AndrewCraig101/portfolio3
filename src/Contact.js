@@ -19,7 +19,8 @@ function contact() {
       <div id="contact" className="contactBox">
           <div className="wrapper">
             <h3>Contact</h3>
-            <form action="">
+            <form action="https://formspree.io/f/moqrvgdj"
+            method="POST">
               <div className="formBox">
                     <label htmlFor="name" className="sr-only">Enter your name:</label>  
                     <input type="text" name="name" id="name" placeholder="Your Name" required/>
