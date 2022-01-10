@@ -13,9 +13,13 @@
         width: 96%;
         padding: 20px;
         background-color: $baseWhite;
-        border: 1px solid rgba(0, 0, 0, .1);
+        border: 1px solid grey;
         resize: none;
         font-size: 1.5rem;
+    }
+
+    textarea:hover {
+        border: 1px solid $accent;
     }
 
     form {
@@ -49,13 +53,18 @@
             line-height: 2.2;
             padding: 20px;
             background-color: $baseWhite;
-            border: 1px solid rgba(0, 0, 0, .1);
-            font-size: 1.5rem;
+            border: 1px solid grey;
+            font-size: 1.5rem;            
+        }
+
+        input:hover {
+            border: 1px solid $accent;
         }
     }
-
-
 }
+
+
+
 
 // CONTACT LOGO BOX
 
@@ -66,18 +75,18 @@
     margin-top: 60px;
 
     .logo {
-        // margin: 0px 40px;
+       
         @include center;
 
          .icon {
                 font-size: 5rem;
                 margin: 10px 0px;
-                color: grey;
+                color: black;
             }
 
         span {
             font-size: 2rem;
-            color: grey;
+            color: black;
         }
     }
 }
@@ -114,7 +123,7 @@
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: grey transparent transparent transparent;
+        border-color: black transparent transparent transparent;
         margin-bottom: 20px;
       }
       

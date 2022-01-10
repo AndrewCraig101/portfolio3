@@ -1,6 +1,8 @@
 
 import React from 'react';
 
+import image2 from './assets/resume.pdf';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -31,37 +33,37 @@ function contact() {
           
 
           <div className="contactIcons">
-              <div class="tooltip logo logo1">
-                <FontAwesomeIcon icon={faLinkedin} className="icon"/>
-                <span class="tooltiptext">LinkedIn</span>
                   <a href="https://www.linkedin.com/in/andrew-craig-6220a5194/">
+              <div class="tooltip logo logo1" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faLinkedin} className="icon" />
+                <span class="tooltiptext">LinkedIn</span>
                     <i class="fab fa-linkedin"></i>
-                  </a>
               </div>
+                  </a>
 
-              <div class="tooltip logo" role="tooltip">
-                <FontAwesomeIcon icon={faEnvelope} className="icon"/>
+                  <a href="mailto:info@andrewcraigdev.com">
+              <div class="tooltip logo" role="tooltip" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faEnvelope} className="icon" />
                 <span class="tooltiptext">Email</span>
-                  <a href="mailto:andrewcraigweb@gmail.com">
                     <i class="fas fa-envelope"></i>
-                  </a>
               </div>
+                  </a>
 
-              <div class="tooltip logo">
-                <FontAwesomeIcon icon={faFile} className="icon"/>
+                  <a href={image2}>
+              <div class="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faFile} className="icon" />
                 <span class="tooltiptext">Resume</span>
-                  <a href="./styles/assets/resume.pdf">
                     <i class="fas fa-file"></i>
-                  </a>
               </div>
+                  </a>
 
-              <div class="tooltip logo">
-                <FontAwesomeIcon icon={faGithub} className="icon"></FontAwesomeIcon>
+                  <a href="https://github.com/AndrewCraig101">
+              <div class="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon>
                 <span class="tooltiptext">Github</span>
-                  <a href="https://github.com/AndrewCraigPortfolio">
                     <i class="fab fa-github-square"></i>
-                  </a>
               </div>
+                  </a>
           </div>
         </div>
     </div>
@@ -69,3 +71,8 @@ function contact() {
 }
 
   export default contact
+
+
+
+
+  

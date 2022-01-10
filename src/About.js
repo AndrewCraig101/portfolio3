@@ -1,7 +1,7 @@
 
 const About = () => {
     return (
-        <section id="about" className="about">
+        <section id="about" className="about" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom">
             <div className="wrapper">
                 <h3>About Me</h3>
                 <p>Welcome! I'm Front End Web Developer based in Toronto. I do responsive and accessible programming working in HTML, SCSS, JavaScript and React. I'm currently developing a coding curriculum for beginners that involves a deep dive of Emmet, VS Code and SCSS. I believe if the fundamentals are taught early, people can code faster! 

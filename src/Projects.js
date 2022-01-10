@@ -30,7 +30,7 @@ return (
                     </div>
                 </div>
             </div> */}
-            <div className="projectDiv" data-aos="fade-left">
+            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>NBA Codestars</h4>
                 <div className="projectImgBox">
                     <img src={image3} alt=""/>
@@ -40,12 +40,12 @@ return (
                     {/* <p>Collaboration with <a href=""></a></p> */}
                 </div>
                 <div className="buttonBox">
-                    <a href="https://nbacodestarsac.netlify.app/">Website</a>
+                    <a href="https://nbscodestars.netlify.app/">Website</a>
                     <a href="https://github.com/AndrewCraigPortfolio/NBACodeStars">Github</a>
                 </div>
             </div>
             
-            <div className="projectDiv" data-aos="fade-up-left"> 
+            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50"> 
                     <h4>Trivia Time</h4>
                 <div className="projectImgBox">
                     <img src={image1} alt=""/>
@@ -60,7 +60,7 @@ return (
                 </div>
             </div>
             
-            <div className="projectDiv" data-aos="fade-left">
+            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4 className="reversH4">Refrigeration Versification</h4>
                 <div className="projectImgBox">
                     <img src={image2} alt=""/>
@@ -76,7 +76,7 @@ return (
 
             </div>
             
-            <div className="projectDiv" data-aos="fade-up-right">
+            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>Oscar Finder</h4>
                 <div className="projectImgBox"><img src={image4} alt=""/></div>
                 <div className="projectInside">
@@ -107,3 +107,6 @@ return (
 }
 
 export default Projects;
+
+
+

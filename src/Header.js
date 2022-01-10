@@ -1,5 +1,5 @@
 
-import image from './assets/1.jpeg';
+import image from './assets/1.jpeg'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,6 +16,7 @@ const Header = () => {
                 <nav>
                     <ul 
                     data-aos="fade-left"
+                    data-aos-duration="1300"
                     data-aos-delay="300"
                     data-aos-easing="ease-out"
                     >
@@ -26,7 +27,8 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="heroImgDiv" 
-                data-aos="fade-in"
+                data-aos="fade-up"
+                data-aos-duration="500"
                 data-aos-delay="400"
                 data-aos-easing="ease-out"
                 >

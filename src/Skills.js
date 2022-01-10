@@ -18,35 +18,35 @@ const Skills = () => {
     <div className="wrapper">
         <h3>Skills</h3>
         <ul>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
                 <FontAwesomeIcon icon={faHtml5} className="icon"></FontAwesomeIcon>
                 <p>HTML5</p>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
                 <FontAwesomeIcon icon={faCss3} className="icon"></FontAwesomeIcon>
                 <p>CSS3</p>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
                 <FontAwesomeIcon icon={faSass} className="icon"></FontAwesomeIcon>
                 <p>SCSS</p>
             </li>
-            <li>
-                <FontAwesomeIcon icon={faJsSquare} className="icon"></FontAwesomeIcon>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faJsSquare} className="icon" ></FontAwesomeIcon>
                 <p>Javascript</p>
             </li>
-            <li>
-                <FontAwesomeIcon icon={faReact} className="icon"></FontAwesomeIcon>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+                <FontAwesomeIcon icon={faReact} className="icon" ></FontAwesomeIcon>
                 <p>ReactJS</p>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
                 <FontAwesomeIcon icon={faFire} className="icon"></FontAwesomeIcon>
                 <p>Firebase</p>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
             <FontAwesomeIcon icon={faUniversalAccess} className="icon"></FontAwesomeIcon>
                 <p>Access</p>
             </li>
-            <li>
+            <li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
                 <FontAwesomeIcon icon={faGithub} className="icon"></FontAwesomeIcon>
                 <p>Git/Github</p>
             </li>

@@ -8,7 +8,6 @@ import Contact from './Contact.js';
 import Footer from './Footer.js';
 
 import './sass/app.scss';
-import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 function App() {
