@@ -38,7 +38,7 @@ function Contactform() {
                 <form onSubmit={handleSubmit} id="fs-frm" acceptCharset="utf-8" action="https://formspree.io/f/moqrvgdj" method="post">
 
                     <div className="formBox">
-                        <label htmlFor="name" className="sr-only">Enter your name:</label> 
+                        <label htmlFor="name" className="sr-only">Name:</label> 
                         <input type="text" name="name" id="name" placeholder="Your Name" required=""/>
 
                         <ValidationError 
@@ -47,7 +47,7 @@ function Contactform() {
                             errors={state.errors}
                         />
 
-                        <label htmlFor="email" className="sr-only">Enter your email:</label> 
+                        <label htmlFor="email" className="sr-only">Email:</label> 
                         <input type="text" name="email" id="email" placeholder="Enter your email" required=""/>
 
                         <ValidationError 
