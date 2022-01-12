@@ -20,10 +20,10 @@ const Header = () => {
                     data-aos-delay="300"
                     data-aos-easing="ease-out"
                     >
-                        <li><a href="#about" class="nombore"><span>About</span><span class="slider"></span></a></li>
-                        <li><a href="#projects" class="nombore"><span>Projects</span><span class="slider"></span></a></li>
-                        <li><a href="#skills" class="nombore"><span>Skills</span><span class="slider"></span></a></li>
-                        <li><a href="#contact" class="nombore"><span>Contact</span><span class="slider"></span></a></li>
+                        <li><a href="#about" className="nombore"><span>About</span><span className="slider"></span></a></li>
+                        <li><a href="#projects" className="nombore"><span>Projects</span><span className="slider"></span></a></li>
+                        <li><a href="#skills" className="nombore"><span>Skills</span><span className="slider"></span></a></li>
+                        <li><a href="#contact" className="nombore"><span>Contact</span><span className="slider"></span></a></li>
                     </ul>
                 </nav>
                 <div className="heroImgDiv" 
