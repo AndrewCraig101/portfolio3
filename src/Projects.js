@@ -1,9 +1,11 @@
 
-import image1 from './assets/p1.jpg'
-import image2 from './assets/p2.jpg'
-import image3 from './assets/p3.jpg'
-import image4 from './assets/p4.jpg'
+import image1 from './assets/p1.png'
+import image2 from './assets/p2.png'
+import image3 from './assets/p3.png'
+import image4 from './assets/p4.png'
 import React from 'react';
+
+// import background from "assets/3back.png";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -15,7 +17,7 @@ return (
     <section id="projects" className="projectSection">
 
         <div className="wrapper">
-            <h3>Projects</h3>
+            <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >Projects</h3>
             {/* <div className="projectDiv">
                 <div className="projectImgBox">
                     <img src={} alt=""/>
@@ -30,14 +32,14 @@ return (
                     </div>
                 </div>
             </div> */}
-            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
+
+            <div className="projectDiv one" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>NBA Codestars</h4>
                 <div className="projectImgBox">
-                    <img src={image3} alt=""/>
+                    <img src={image3} alt="The website NBACodestars running on a laptop and mobile phone. Three teams and a dropdown menu are displayed"/>
                     </div>
                 <div className="projectInside">
                     <p>A database of NBA teams and players. <span>Javascript, JSModules, API and SCSS.</span></p>
-                    {/* <p>Collaboration with <a href=""></a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://nbscodestars.netlify.app/">Website</a>
@@ -45,14 +47,13 @@ return (
                 </div>
             </div>
             
-            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50"> 
+            <div className="projectDiv two" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50"> 
                     <h4>Trivia Time</h4>
                 <div className="projectImgBox">
-                    <img src={image1} alt=""/>
+                    <img src={image1} alt="The website Trivia Time running on a laptop and mobile phone. Buttons to choose amount of players and topic are displayed"/>
                     </div>
                 <div className="projectInside">
                     <p>Trivia game with timer. <span>React with API and Firebase.</span> Create multiple player avatars and save to a score leaderboard.</p>
-                    {/* <p>Collaboration with <a href=""></a>, <a href=""></a> and <a href=""></a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://triviatimeac.netlify.app/">Website</a>
@@ -60,14 +61,13 @@ return (
                 </div>
             </div>
             
-            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
+            <div className="projectDiv three" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4 className="reversH4">Refrigeration Versification</h4>
                 <div className="projectImgBox">
-                    <img src={image2} alt=""/>
+                    <img src={image2} alt="The website Refrigeration Versification running on a laptop and mobile phone. Magnets with word choices are shown"/>
                     </div>
                 <div className="projectInside">
                     <p>Inspired by magnetic fridge poetry. Employs <span>drag and drop functionality, form autocomplete from the Datamuse API and Firebase</span>.</p>
-                    {/* <p>Collaboration with <a href="">, </a><a href="">, </a><a href=""> and </a></p> */}
                 </div>
                 <div className="buttonBox">
                     <a href="https://refrigerationversification.netlify.app/">Website</a>
@@ -76,9 +76,9 @@ return (
 
             </div>
             
-            <div className="projectDiv" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
+            <div className="projectDiv four" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>Oscar Finder</h4>
-                <div className="projectImgBox"><img src={image4} alt=""/></div>
+                <div className="projectImgBox"><img src={image4} alt="The website Oscar Finder running on a laptop and mobile phone. A drop down menu displays year."/></div>
                 <div className="projectInside">
                     <p>Draws Oscar winners by year from <span>JSON data inside Firebase</span></p>
                 </div>

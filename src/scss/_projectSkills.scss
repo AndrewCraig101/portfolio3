@@ -16,6 +16,30 @@ $aos-distance: 50px; // It has to be above import
     // Styles to add to the animation in the project section
     // use nth child here instead
 
+    // New project backgrounds
+
+    // .one {
+    //     background-color: #283149;
+            
+    // }
+
+    // .two {
+        // background: linear-gradient(#0e0e52 10%,#3c1642);
+            // background-color: #3c1642;
+
+    // }
+
+    // .three {
+    //     background-image: url('assets/3back.png')
+    // }
+
+    // .four {
+        // background-color: black;
+    // }
+
+
+
+
     
 
     h3 {
@@ -27,6 +51,7 @@ $aos-distance: 50px; // It has to be above import
         @include center;
         margin: 40px 0px 50px 0px;
         width: 100%;
+        background-color: #f5f5f5;
 
         h4 {
             margin-bottom: 20px;
@@ -172,7 +197,7 @@ $aos-distance: 50px; // It has to be above import
             width: 100%;
 
             a {
-                width: 85%;
+                width: 100%;
             }
         }
     }
@@ -191,7 +216,7 @@ $aos-distance: 50px; // It has to be above import
         
 
         .projectInside {
-            background-color: black;
+            
             .buttonBox {
                 @include center;
                 align-content: space-around;

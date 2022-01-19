@@ -8,6 +8,7 @@ import Contactform from './Contactform.js'
 import Contactlinks from './Contactlinks.js';
 import Footer from './Footer.js';
 
+
 import './sass/app.scss';
 import 'aos/dist/aos.css'; 
 
@@ -19,9 +20,10 @@ function App() {
         <About />
         <Projects />
         <Skills />
-        <div className="contactSection" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
+        <div className="contactSection">
           <Contactform />
           <Contactlinks />
+
         </div>
       </main>
       <Footer />
