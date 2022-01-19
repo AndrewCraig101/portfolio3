@@ -1,8 +1,12 @@
-// Header.js
-// Header.js
-// Header.js
 
-import image from './assets/1.jpeg';
+import image from './assets/1.jpeg'
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+import { faGithub, faSass, faReact, faJsSquare, faCss3 } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab, faGithub, faSass, faReact, faJsSquare, faCss3)
 
 
 const Header = () => {
@@ -10,18 +14,24 @@ const Header = () => {
         <header>
             <div className="wrapper">
                 <nav>
-                    <ul>
-                        <li><a href="#about" class="nombore"><span>About</span><span class="slider"></span></a></li>
-                        <li><a href="#projects" class="nombore"><span>Projects</span><span class="slider"></span></a></li>
-                        <li><a href="#skills" class="nombore"><span>Skills</span><span class="slider"></span></a></li>
-                        <li><a href="#contact" class="nombore"><span>Contact</span><span class="slider"></span></a></li>
-                        
+                    <ul 
+                    data-aos="fade-left"
+                    data-aos-duration="1300"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-out"
+                    >
+                        <li><a href="#about" className="nombore"><span>About</span><span className="slider"></span></a></li>
+                        <li><a href="#projects" className="nombore"><span>Projects</span><span className="slider"></span></a></li>
+                        <li><a href="#skills" className="nombore"><span>Skills</span><span className="slider"></span></a></li>
+                        <li><a href="#contact" className="nombore"><span>Contact</span><span className="slider"></span></a></li>
                     </ul>
                 </nav>
-                <div className="builtInBox">
-                <p>Built with</p>
-                </div>
-                <div className="heroImgDiv">
+                <div className="heroImgDiv" 
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-delay="400"
+                data-aos-easing="ease-out"
+                >
                     <img src={image} alt=""/>
                 </div>
                 <h1>Andrew Craig</h1>
@@ -30,6 +40,5 @@ const Header = () => {
         </header>
     )
 }
-
 
 export default Header

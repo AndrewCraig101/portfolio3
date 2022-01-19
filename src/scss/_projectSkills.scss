@@ -4,21 +4,19 @@
 // PROJECT SECTION
 // PROJECT SECTION
 
+$aos-distance: 50px; // It has to be above import
+@import 'node_modules/aos/src/sass/aos.scss';
+
 .projectSection {
     width: 100%;
     @include center;
     background-color: $offWhite;
     padding: 60px 0px 40px 0px;
 
-    // div .odd {
-    //     width: 70%;
-    //     align-self: flex-start;
-    // }
+    // Styles to add to the animation in the project section
+    // use nth child here instead
 
-    // div .even {
-    //     width: 70%;
-    //     align-self: flex-end;
-    // }
+    
 
     h3 {
         margin: 0px 0px 25px 0px;   
@@ -57,7 +55,7 @@
 
     .projectInside > p:first-child {
         margin: 15px 0px 5px 0px
-}
+    }
 
         .buttonBox a {
             cursor: pointer;
@@ -101,33 +99,35 @@
 // SKILLS SECTION
 // SKILLS SECTION
 
-.skills {
-    width: 100%;
-    @include center;
-    flex-direction: column;
-    background-color: $baseWhite;
-    padding: 60px 0px; 
+    .skills {
+        width: 100%;
+        @include center;
+        flex-direction: column;
+        background-color: $baseWhite;
+        padding: 60px 0px; 
 
 
     ul {
         list-style-type: none;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-
-        p {
-            font-size: 2rem;
-        }
+        width: 100%;
+        padding: 0px;
         
-
         li {
-            margin: 15px 15px;
+            margin: 15px;
             @include center;
             flex-direction: column;
+            padding: 10px;
+
+            p {
+                font-size: 2rem;
+            }
 
             .icon {
-                font-size: 2rem;
+                font-size: 5rem;
                 margin-bottom: 10px;
             }
         }
@@ -138,48 +138,75 @@
 // MEDIA QUERIES
 // MEDIA QUERIES
 
-@media (max-width: 900px) {
+    @media (max-width: 900px) {
 
-.projectSection .projectInside {
-        width: 70%;
-        
+    .projectSection .projectInside {
+            width: 70%;
+            
+            }
         }
-    }
 
-    .buttonBox {
-        width: auto;
-    }
+        .buttonBox {
+            width: auto;
+        }
 
-@media (max-width: 480px) {
+    @media (max-width: 420px) {
 
-    .projectDiv {
-        width: 100%;
-    }
-
-.projectSection {
-    
-    .projectInside {
-        width: 100%;
-
-        div {
+        .projectDiv {
             width: 100%;
         }
+
+    .projectSection {
+        
+        .projectInside {
+            width: 100%;
+
+            div {
+                width: 100%;
+            }
+        }
+
+        .buttonBox {
+            @include center;
+            align-content: space-around;
+            width: 100%;
+
+            a {
+                width: 85%;
+            }
+        }
     }
 
-    .buttonBox {
-        @include center;
-        align-content: space-around;
-
-    
+    .projectSection .buttonBox a:nth-child(2){
+        margin-top: 15px;
+        margin-left: 0px;
         
     }
-}
-
-.projectSection .buttonBox a:nth-child(2){
-    margin-top: 15px;
-    margin-left: 0px;
-    
-}
 
 }
+
+    @media (max-width: 400px) {
+
+    .projectSection {
+        
+
+        .projectInside {
+            background-color: black;
+            .buttonBox {
+                @include center;
+                align-content: space-around;
+                width: 100%;
+                
+        
+                a {
+                    width: 100%;
+                    background-color: red;
+                }
+            }
+
+        }
+    }
+}
+
+
 

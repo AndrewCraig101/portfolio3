@@ -5,13 +5,29 @@
 
 header {
     width: 100%;
-    background-image: url('../assets/background/b3.jpg');
+    background-image: url('../assets/background/11.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     @include center;
     flex-wrap: wrap;
     align-content: center;
     padding-bottom: 60px;
+
+    .builtInBox {
+    
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    .builtInBox > .icon:nth-child(3) {
+        margin-left: 35px;
+    }
 
     div {
 
