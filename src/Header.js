@@ -1,6 +1,6 @@
 
 import React from 'react';
-import image from './assets/1.jpeg'
+import image from './cosmetics/logo.png'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -21,6 +21,11 @@ const Header = () => {
             </div> */}
 
             <div className="wrapper">
+
+            <div className="logoDiv" >
+                <img src={image} className="logo" alt="A logo with the words Andrew Craig, Front End Web Developer"/>
+            </div>
+            
                 <nav>
                     <ul 
                     data-aos="fade-left"
@@ -34,7 +39,7 @@ const Header = () => {
                         <li><a href="#contact" className="nombore"><span class="sr-only">Contact</span><span>Contact</span><span className="slider"></span></a></li>
                     </ul>
                 </nav>
-                <div className="heroImgDiv" 
+                {/* <div className="heroImgDiv" 
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-delay="400"
@@ -43,7 +48,7 @@ const Header = () => {
                     <img src={image} alt="Andrew Craig, Front End Web Developer"/>
                 </div>
                 <h1>Andrew Craig</h1>
-                <h2>Front End Web Developer</h2>
+                <h2>Front End Web Developer</h2> */}
             </div>
         </header>
     )

@@ -26,15 +26,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     // TYPOGRAPHY
 
     a, button {
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
     }
 
     h3, h5 {
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
     }
 
     h4 {
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
         font-size: 2.7rem;
         font-weight: normal;
         padding-bottom: 2px;
@@ -49,7 +49,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     h1, h2 {
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
         
     }
 
@@ -62,7 +62,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     }
 
     p {
-        font-family: 'Roboto Mono', monospace; 
+        font-family: 'Roboto', sans-serif; 
         font-weight: 300;
         font-size: 1.8rem;
         line-height: 2.2rem;
