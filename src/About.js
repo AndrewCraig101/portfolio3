@@ -26,7 +26,6 @@ const About = () => {
                     guitar and read sci fi books. I’ve also recorded over 60 songs!
                     Please feel free to contact me! 
                     </p>
-                    <p data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom"> In my spare time I play guitar, read sci fi and sometimes act in plays. Let's get some work done!</p>
                 </div>
             </div>
         </section>     

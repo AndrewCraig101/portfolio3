@@ -94,20 +94,22 @@
     margin-top: 60px;
 
     .logo {
-       
-        @include center;
+        margin: 0px 5px 0px 5px;
 
-         .icon {
-                font-size: 5rem;
-                margin: 10px 0px;
-                color: black;
-            }
+        .icon {
+            width: 100%;
+            margin: 10px 0px;
+        }
 
         span {
             font-size: 2rem;
             color: black;
         }
+        
     }
+
+      
+    
 }
 
 // Tool tip code 
@@ -179,8 +181,12 @@ footer {
 
 @media (max-width: 850px) {
 
-    .contactBox {
+    .contactIcons {
+        width: 80%;
+    }
 
+    .contactBox {
+         
         .formBox {
             flex-direction: column;
 
@@ -196,6 +202,11 @@ footer {
 }
 
     @media (max-width: 480px) {
+        .contactIcons {
+        width: 92%;
+        }
+
+
         .contactBox {
 
             .formBox {
