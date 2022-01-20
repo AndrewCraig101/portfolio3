@@ -36,8 +36,8 @@ function ContactLinks() {
                       data-aos="flip-left" 
                       data-aos-duration="3000" 
                       data-aos-anchor-placement="top-bottom">
-                      {/* <FontAwesomeIcon icon={faLinkedin} className="icon"/> */}
-                      <img src={image4} alt="A logo link for LinkedIN"/>
+                      {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+                      <img src={image4} className="icon" alt="A logo link for LinkedIN"/>
                       <span className="tooltiptext">LinkedIn</span>
                       </div>       
                     </a>
@@ -49,7 +49,7 @@ function ContactLinks() {
                         data-aos-duration="3000" 
                         data-aos-anchor-placement="top-bottom">
                         {/* <FontAwesomeIcon icon={faEnvelope} className="icon" /> */}
-                        <img src={image6} alt="A logo link for email"/>
+                        <img src={image6} className="icon" alt="A logo link for email"/>
                         <span className="tooltiptext">Email</span>
                       </div>
                       <span class="sr-only">Open email window</span>
@@ -60,7 +60,7 @@ function ContactLinks() {
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   {/* <FontAwesomeIcon icon={faFile} className="icon" /> */}
                   
-                  <img src={image2} alt="A logo link for resume"/>
+                  <img src={image2} className="icon" alt="A logo link for resume"/>
                   <span className="tooltiptext">Resume</span>
                 </div>
                     <span class="sr-only">Open resume pdf</span>
@@ -70,7 +70,7 @@ function ContactLinks() {
                     <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   {/* <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon> */}
-                  <img src={image5} alt="A logo link for github"/>
+                  <img src={image5} className="icon" alt="A logo link for github"/>
                   <span className="tooltiptext">Github</span>
                 </div>
                     <span class="sr-only">Navigate to GitHub profile</span>                  
@@ -80,7 +80,7 @@ function ContactLinks() {
                     <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   {/* <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon> */}
-                  <img src={image3} alt="A logo link for Twitter"/>
+                  <img src={image3} className="icon" alt="A logo link for Twitter"/>
                   <span className="tooltiptext">Twitter</span>
                 </div>
                     <span class="sr-only">Navigate to Twitter profile</span>                  

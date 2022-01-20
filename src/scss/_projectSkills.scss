@@ -13,35 +13,6 @@ $aos-distance: 50px; // It has to be above import
     background-color: $offWhite;
     padding: 60px 0px 40px 0px;
 
-    // Styles to add to the animation in the project section
-    // use nth child here instead
-
-    // New project backgrounds
-
-    // .one {
-    //     background-color: #283149;
-            
-    // }
-
-    // .two {
-        // background: linear-gradient(#0e0e52 10%,#3c1642);
-            // background-color: #3c1642;
-
-    // }
-
-    // .three {
-    //     background-image: url('assets/3back.png')
-    // }
-
-    // .four {
-        // background-color: black;
-    // }
-
-
-
-
-    
-
     h3 {
         margin: 0px 0px 25px 0px;   
         font-weight: 600;
@@ -135,7 +106,7 @@ $aos-distance: 50px; // It has to be above import
     ul {
         list-style-type: none;
         display: flex;
-        justify-content: space-around;
+        // justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
