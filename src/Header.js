@@ -16,16 +16,14 @@ library.add(fab, faGithub, faSpinner, faSass, faReact, faJsSquare, faCss3)
 const Header = () => {
     return (
         <header>
-            {/* <div id="loader" class="loadingContainer">
-                <FontAwesomeIcon icon={faSpinner} className="loader" ></FontAwesomeIcon>
-            </div> */}
+         
 
             <div className="wrapper">
 
             <div className="logoDiv" >
                 <img src={image} className="logo" alt="A logo with the words Andrew Craig, Front End Web Developer"/>
             </div>
-            
+
                 <nav>
                     <ul 
                     data-aos="fade-left"
