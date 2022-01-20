@@ -70,6 +70,17 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
     // MISC
 
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;  margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
     @mixin center {
         display: flex;
         justify-content: center;
@@ -204,3 +215,40 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
         0% {opacity:0;}
         100% {opacity:1;}
         }
+
+    // Loading animation
+
+    .loadingContainer {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        // background: rgba(black, 0.8);
+}
+
+.fas.fa-basketball-ball {
+        font-size: calc(5rem + 2vw);
+        color: orange;
+
+        animation-name: loading;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+}
+
+@keyframes loading {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+}
+

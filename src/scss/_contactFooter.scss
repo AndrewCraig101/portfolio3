@@ -18,6 +18,10 @@
         font-size: 1.5rem;
     }
 
+    .formSection {
+        width: 100%;
+    }
+
     textarea:hover {
         border: 1px solid $accent;
     }
@@ -61,6 +65,10 @@
             border: 1px solid $accent;
         }
     }
+}
+
+.formNote {
+    @include center;
 }
 
 @media (max-width: 420px) {
@@ -179,7 +187,6 @@ footer {
         .formBox input:nth-child(4) {
             margin-top: 20px;
         }
-        // .buttonBox a:nth-child(2)
     }    
 }
 

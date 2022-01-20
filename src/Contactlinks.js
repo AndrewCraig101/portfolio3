@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+
 import image2 from './assets/resume.pdf';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -14,51 +15,71 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(fab, faGithub, faEnvelope, faFile, faGithub, faLinkedin)
 
-function contactlinks() {
+function ContactLinks() {
     return (
+
       <div id="contact" className="contactLinkBox">
           <div className="wrapper">
-            
+
 
             <div className="contactIcons">
+
                     <a href="https://www.linkedin.com/in/andrew-craig-6220a5194/">
-                <div className="tooltip logo logo1" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                  <FontAwesomeIcon icon={faLinkedin} className="icon" />
-                  <span className="tooltiptext">LinkedIn</span>
-                      <i className="fab fa-linkedin"></i>
-                </div>
+                      <span class="sr-only">Opens in a new window</span>
+                     
+                      <div className="tooltip logo logo1" 
+                      
+                      data-aos="flip-left" 
+                      data-aos-duration="3000" 
+                      data-aos-anchor-placement="top-bottom">
+                      <FontAwesomeIcon icon={faLinkedin} className="icon"/>
+
+                      <span className="tooltiptext">LinkedIn</span>
+                      </div>   
+                               
                     </a>
 
-                    <a href="mailto:info@andrewcraigdev.com">
-                <div className="tooltip logo" role="tooltip" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                  <span className="tooltiptext">Email</span>
-                      <i className="fas fa-envelope"></i>
-                </div>
+                    <a href="mailto:info@andrewcraigdev.com" aria-label="Twitter">
+                      <span class="sr-only">Opens in a new window</span>
+
+                      <div className="tooltip logo"
+                        data-aos="flip-left" 
+                        data-aos-duration="3000" 
+                        data-aos-anchor-placement="top-bottom">
+
+                        <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                        <span className="tooltiptext">Email</span>
+                      </div>
+                      <span class="sr-only">Open email window</span>
                     </a>
 
-                    <a href={image2}>
+                    <a href={image2} aria-label="Twitter">
+                    <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   <FontAwesomeIcon icon={faFile} className="icon" />
                   <span className="tooltiptext">Resume</span>
-                      <i className="fas fa-file"></i>
                 </div>
+                    <span class="sr-only">Open resume pdf</span>
                     </a>
 
-                    <a href="https://github.com/AndrewCraig101">
+                    <a href="https://github.com/AndrewCraig101" aria-label="Twitter">
+                    <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon>
                   <span className="tooltiptext">Github</span>
-                      <i className="fab fa-github-square"></i>
                 </div>
+                    <span class="sr-only">Navigate to GitHub profile</span>                  
                     </a>
             </div>
         </div>
     </div>
-  );
+    )
+ 
 }
 
-  export default contactlinks
+
+
+  export default ContactLinks
 
 
 

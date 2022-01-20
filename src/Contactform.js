@@ -2,44 +2,26 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 function Contactform() {
-  const [state, handleSubmit] = useForm("moqrvgdj");
-  if (state.succeeded) {
-      return <p>Thank you for reaching out!</p>;
-  }
-
-// ***********
-
-// class Contactform extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {value: ''};
-
-//     this.handleChange = this.handleChange.bind(this);
-//     this.handleSubmit = this.handleSubmit.bind(this);
-//   }
-
-//   handleChange(event) {
-//     this.setState({value: event.target.value});
-//   }
-
-//   handleSubmit(event) {
-//     alert('A name was submitted: ' + this.state.value);
-//     event.preventDefault();
-//   }
-
-// }
-// render() {}
-
+const [state, handleSubmit] = useForm("moqrvgdj");
+if (state.succeeded) {
+    return (
+    <div className="formNote">
+        <p>Your message has been sent.</p>
+        <p>Thank you for reaching out!</p>
+    </div>
+    )
+}
 
     return (
-        <div className="wrapper">
+        <section className="formSection" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >
+            <div className="wrapper">
                 <h3>Contact</h3>
 
-                <form onSubmit={handleSubmit} id="fs-frm" acceptCharset="utf-8" action="https://formspree.io/f/moqrvgdj" method="post">
+                <form onSubmit={handleSubmit} id="fs-frm" acceptCharset="utf-8">
 
                     <div className="formBox">
                         <label htmlFor="name" className="sr-only">Name:</label> 
-                        <input type="text" name="name" id="name" placeholder="Your Name" required=""/>
+                        <input type="text" name="name" id="name" placeholder="Name" required=""/>
 
                         <ValidationError 
                             prefix="Name" 
@@ -48,7 +30,7 @@ function Contactform() {
                         />
 
                         <label htmlFor="email" className="sr-only">Email:</label> 
-                        <input type="text" name="email" id="email" placeholder="Enter your email" required=""/>
+                        <input type="text" name="email" id="email" placeholder="Email" required=""/>
 
                         <ValidationError 
                             prefix="Email" 
@@ -72,6 +54,7 @@ function Contactform() {
                     </button>
                 </form>
             </div>
+        </section>
     );
 
 }

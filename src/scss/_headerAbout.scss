@@ -3,6 +3,31 @@
 // HEADER SECTION
 // HEADER SECTION
 
+// Skip Link
+
+.skipLink {
+  position: absolute;
+  left: -100%;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  background: red;
+  color: $offWhite;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.skipLink:focus {
+  left: 0;
+}
+
+.loader {
+    font-size: 5rem;
+    color: white;
+}
+
 header {
     width: 100%;
     background-image: url('../assets/background/11.jpg');
@@ -11,7 +36,7 @@ header {
     @include center;
     flex-wrap: wrap;
     align-content: center;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 
     .builtInBox {
     
