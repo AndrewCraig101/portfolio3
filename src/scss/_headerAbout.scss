@@ -40,7 +40,7 @@ header {
 
     .wrapper .logoDiv {
         width: 30%;
-        margin-right: 36px;
+        margin-right: 116px;;
 
         img { width: 100%; }
     }
@@ -48,6 +48,8 @@ header {
     .wrapper {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
     }
 
     .builtInBox {
@@ -141,8 +143,8 @@ header {
     }   
 
     p {
-        width: 70%;
-        text-indent: 40px;
+        width: 90%;
+     
     }
 
     h3 {
