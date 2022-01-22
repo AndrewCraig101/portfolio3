@@ -8,8 +8,6 @@ import image4 from './cosmetics/linked.png';
 import image5 from './cosmetics/git.png';
 import image6 from './cosmetics/mail.png';
 
-
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -24,7 +22,7 @@ library.add(fab, faGithub, faEnvelope, faFile, faGithub, faLinkedin)
 function ContactLinks() {
     return (
 
-      <div id="contact" className="contactLinkBox">
+      <div className="contactLinkBox">
           <div className="wrapper">
 
 

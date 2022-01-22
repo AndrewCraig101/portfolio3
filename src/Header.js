@@ -20,7 +20,12 @@ const Header = () => {
 
             <div className="wrapper">
 
-            <div className="logoDiv" >
+            <div className="logoDiv"
+              data-aos="fade-down"
+                    data-aos-duration="1300"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-out">
+
                 <img src={image} className="logo" alt="A logo with the words Andrew Craig, Front End Web Developer"/>
             </div>
 

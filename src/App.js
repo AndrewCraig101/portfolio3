@@ -22,10 +22,9 @@ function App() {
         <About />
         <Projects />
         <Skills />
-        <div className="contactSection">
+        <div className="contactSection" id="contact">
           <Contactform />
           <Contactlinks />
-
         </div>
       </main>
       <Footer />

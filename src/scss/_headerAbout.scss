@@ -35,8 +35,9 @@ header {
     @include center;
     flex-wrap: wrap;
     align-content: center;
-    padding-bottom: 20px;
     background-color: $offWhite;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     .wrapper .logoDiv {
         width: 30%;
@@ -77,13 +78,12 @@ header {
 
     nav {
         width: 95%;
-        margin: 40px 0px;
         @include center;
     }
 
     ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         list-style-type: none;
         flex-wrap: wrap;
@@ -91,15 +91,15 @@ header {
         padding: 0px;
 
         li {
-            margin: 0 auto;
+            margin: 0px 25px 0px 25px;
         }
 
         a {
             text-decoration: none;
-            font-size: 2.8rem;
-            margin: 4px 10px;
+            font-size: 2.4rem;
             display: inline-block;
             color: #006154;
+            margin: 0px 0px 0px 5px;
         }
     }
 
@@ -125,11 +125,12 @@ header {
 .about {
     @include center;
     width: 100%;
+    background: $offWhite;
     
 
     p {
         color: #ffffff;
-        width: 90%;
+        width: 100%;
         line-height: 3rem;
     }
 
@@ -142,6 +143,7 @@ header {
     flex-direction: row;
     margin: 0px;
     max-width: 1440px;
+    align-items: stretch;
     
 
         .heroImgDiv  {
@@ -152,47 +154,100 @@ header {
         width: 100%;
         display: block;
         flex-shrink: 0;
+        height: 100%;
+        object-fit: cover;
         }
      
 
     .aboutContainer {
         width: 70%;
         background: #006154;
-        align-self: stretch;
         padding: 40px;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-shrink: 2;
+        align-items: flex-start;
+        padding-left: 65px;
+
+            a {
+                text-decoration: none;
+                color: #00EBCF;
+            }
         }
     }
 
 }
 
-.about p:nth-child(2) {
+// MEDIA QUERIES
+// MEDIA QUERIES
+// MEDIA QUERIES
    
-}
 
-.about h3:nth-child(1) {
-   
-}
-
-// MEDIA QUERIES
-// MEDIA QUERIES
-// MEDIA QUERIES
-
-@media (max-width: 865px) {
+@media (max-width: 1150px) { 
 
     header .wrapper {
-        flex-direction: column;
-        margin-top: 60px;
+        margin-top: 30px;
         justify-content: center;
         align-items: center;
+        width: 90%;
 
         .logoDiv {
             margin: 0px;
+            width: 30%;
+            margin-right: 0px;
         }
     }
 
+}
+
+@media (max-width: 865px) {
+
+    header {
+    padding-bottom: 20px;
+    padding-top: 50px;
+
+    ul {
+        justify-content: center;
+    }
+
+        .wrapper {
+            flex-direction: column;
+            margin-top: 0px;
+
+            nav {
+                margin: 20px 0px 20px 0px;
+            }
+
+            .logoDiv {
+                width: 45%;
+            }
+        }
+
+    }
+    
+    .about .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+
+        .logoDiv {
+            margin-bottom: 20px;
+        }
+    }
+
+    .about {
+        .wrapper {
+                
+            .aboutContainer {
+                width: 100%;
+            }
+
+            .heroImgDiv {
+                    width: 40%;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
