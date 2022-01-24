@@ -187,6 +187,8 @@ $aos-distance: 50px; // It has to be above import
 
     @media (max-width: 400px) {
 
+        
+
     .projectSection {
         
 
@@ -205,6 +207,10 @@ $aos-distance: 50px; // It has to be above import
             }
 
         }
+    }
+
+    .skills {
+        padding: 0px;
     }
 }
 

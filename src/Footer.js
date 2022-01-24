@@ -6,7 +6,6 @@ const Footer = () => {
     return (
       <footer>
         <div className="wrapper">
-          <p>Designed by <a href="https://www.lauratuttle.com/" className="laura"><span class="sr-only">Link to designer Laura Tuttle</span>Laura Tuttle</a></p> 
           <p>Built in React by Andrew Craig - 2022</p>
         </div>
       </footer>
