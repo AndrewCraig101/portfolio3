@@ -13,7 +13,7 @@ if (state.succeeded) {
 }
 
     return (
-        <section className="formSection" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >
+        <section className="formSection"  data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >
             <div className="wrapper">
                 <h3>Contact</h3>
 

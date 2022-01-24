@@ -95,6 +95,7 @@
 
     .logo {
         margin: 0px 5px 0px 5px;
+        width: 65%;
 
         .icon {
             width: 100%;
@@ -106,10 +107,7 @@
             color: black;
         }
         
-    }
-
-      
-    
+    }   
 }
 
 // Tool tip code 
@@ -161,17 +159,12 @@ footer {
     background-color: black;
     width: 100%;
     @include center;
-    padding: 30px 0px;
+    padding: 10px 0px;
 
     p {
         color: white;
         width: 60%;
         text-align: center;
-    }
-
-    .laura {
-        text-decoration: none;
-        color: teal;
     }
 }
 
@@ -222,5 +215,21 @@ footer {
             }
         }
 
+}
+
+@media (max-width: 380px) { 
+
+    .contactSection {
+        padding: 60px 0px 100px 0px;
+    }
+
+    .contactIcons {
+        width: 100%;
+        padding: 0px 5px 0px 5px;
+
+        .logo {
+            width: 70%;
+        }
+    }
 }
 

@@ -50,9 +50,6 @@ const Skills = () => {
                 <FontAwesomeIcon icon={faGithub} className="icon"></FontAwesomeIcon>
                 <p>Git/Github</p>
             </li>
-            <li>
-                <p></p>
-            </li>
         </ul>
     </div>
     </section>
