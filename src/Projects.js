@@ -50,7 +50,7 @@ return (
             <div className="projectDiv two" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50"> 
                     <h4>Trivia Time</h4>
                 <div className="projectImgBox">
-                    <img src={image1} alt="The website Trivia Time running on a laptop and mobile phone. Buttons to choose amount of players and topic are displayed"/>
+                    <img src={image2} alt="The website Trivia Time running on a laptop and mobile phone. Buttons to choose amount of players and topic are displayed"/>
                     </div>
                 <div className="projectInside">
                     <p>Trivia game with timer. <span>React with API and Firebase.</span> Create multiple player avatars and save to a score leaderboard.</p>
@@ -60,22 +60,7 @@ return (
                     <a href="https://github.com/AndrewCraigPortfolio/triviaTimeAC">Github</a>
                 </div>
             </div>
-            
-            <div className="projectDiv three" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
-                    <h4 className="reversH4">Refrigeration Versification</h4>
-                <div className="projectImgBox">
-                    <img src={image2} alt="The website Refrigeration Versification running on a laptop and mobile phone. Magnets with word choices are shown"/>
-                    </div>
-                <div className="projectInside">
-                    <p>Inspired by magnetic fridge poetry. Employs <span>drag and drop functionality, form autocomplete from the Datamuse API and Firebase</span>.</p>
-                </div>
-                <div className="buttonBox">
-                    <a href="https://refrigerationversification.netlify.app/">Website</a>
-                    <a href="https://github.com/AndrewCraigPortfolio/RefrigerationVersification">Github</a>
-                </div>
 
-            </div>
-            
             <div className="projectDiv four" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>Oscar Finder</h4>
                 <div className="projectImgBox"><img src={image4} alt="The website Oscar Finder running on a laptop and mobile phone. A drop down menu displays year."/></div>
@@ -87,6 +72,23 @@ return (
                         <a href="https://github.com/AndrewCraigPortfolio/OscarFinder">Github</a>
                 </div>
             </div>
+            
+            <div className="projectDiv three" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
+                    <h4 className="reversH4">Refrigeration Versification</h4>
+                <div className="projectImgBox">
+                    <img src={image1} alt="The website Refrigeration Versification running on a laptop and mobile phone. Magnets with word choices are shown"/>
+                    </div>
+                <div className="projectInside">
+                    <p>Inspired by magnetic fridge poetry. Employs <span>drag and drop functionality, form autocomplete from the Datamuse API and Firebase</span>.</p>
+                </div>
+                <div className="buttonBox">
+                    <a href="https://refrigerationversification.netlify.app/">Website</a>
+                    <a href="https://github.com/AndrewCraigPortfolio/RefrigerationVersification">Github</a>
+                </div>
+
+            </div>
+            
+            
         </div>
         {/* <div className="projectDiv even">
             <div className="projectImgBox">
