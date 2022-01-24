@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-
+import resume from './assets/resume.pdf';
 import image2 from './cosmetics/resume.png';
 import image3 from './cosmetics/twit.png';
 import image4 from './cosmetics/linked.png';
@@ -34,7 +34,7 @@ function ContactLinks() {
                       data-aos="flip-left" 
                       data-aos-duration="3000" 
                       data-aos-anchor-placement="top-bottom">
-                      {/* <FontAwesomeIcon icon={faLinkedin} /> */}
+                    
                       <img src={image4} className="icon" alt="A logo link for LinkedIN"/>
                       <span className="tooltiptext">LinkedIn</span>
                       </div>       
@@ -46,18 +46,16 @@ function ContactLinks() {
                         data-aos="flip-left" 
                         data-aos-duration="3000" 
                         data-aos-anchor-placement="top-bottom">
-                        {/* <FontAwesomeIcon icon={faEnvelope} className="icon" /> */}
+                    
                         <img src={image6} className="icon" alt="A logo link for email"/>
                         <span className="tooltiptext">Email</span>
                       </div>
                       <span class="sr-only">Open email window</span>
                     </a>
 
-                    <a href={image2} aria-label="Resume">
+                    <a href={resume} aria-label="Resume">
                     <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                  {/* <FontAwesomeIcon icon={faFile} className="icon" /> */}
-                  
                   <img src={image2} className="icon" alt="A logo link for resume"/>
                   <span className="tooltiptext">Resume</span>
                 </div>
@@ -67,22 +65,20 @@ function ContactLinks() {
                     <a href="https://github.com/AndrewCraig101" aria-label="Github">
                     <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                  {/* <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon> */}
                   <img src={image5} className="icon" alt="A logo link for github"/>
                   <span className="tooltiptext">Github</span>
                 </div>
                     <span class="sr-only">Navigate to GitHub profile</span>                  
                     </a>
 
-                       <a href="https://twitter.com/andrewcraig101" aria-label="Twitter">
+                  <a href="https://twitter.com/andrewcraig101" aria-label="Twitter">
                     <span class="sr-only">Opens in a new window</span>
-                <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                  {/* <FontAwesomeIcon icon={faGithub} className="icon" ></FontAwesomeIcon> */}
-                  <img src={image3} className="icon" alt="A logo link for Twitter"/>
-                  <span className="tooltiptext">Twitter</span>
-                </div>
+                    <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                      <img src={image3} className="icon" alt="A logo link for Twitter"/>
+                    <span className="tooltiptext">Twitter</span>
+                    </div>
                     <span class="sr-only">Navigate to Twitter profile</span>                  
-                    </a>
+                  </a>
             </div>
         </div>
     </div>
