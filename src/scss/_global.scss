@@ -10,109 +10,92 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 // ADJUSTMENTS
 
-    h1, h2, h3, h4, h5 {
-    margin: 0px;
+h1, h2, h3, h4, h5 {
+margin: 0px;
+color: #006154;
+}
+
+main {
+    width: 100%;
+}
+
+// VARIABLES
+
+$baseWhite: #fafafa;
+$offWhite: #f5f5f5;
+$accent: #00A390;
+
+// TYPOGRAPHY
+
+h1, h2, h3, h4, h5, p, a, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #00A390;
+}
+
+h4 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    padding-bottom: 2px;
     color: #006154;
-    }
+}
 
-    main {
-        width: 100%;
-    }
+h5 {
+    font-size: 2.3rem;
+}
 
-    // VARIABLES
+p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
 
-    $baseWhite: #fafafa;
-    $offWhite: #f5f5f5;
-    $accent: #00A390;
-    // #006154 - dark green
+.projectSection p {
+    color: #595454; 
+}
 
-    // $accent: 
+// MISC
 
-    // TYPOGRAPHY
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;  margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
 
-    a, button {
-        font-family: 'Roboto', sans-serif;
-    }
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
 
-    h3, h5 {
-        font-family: 'Roboto', sans-serif;
-    }
+.wrapper {
+    margin: 0 auto;
+    @include center;
+    max-width: 1100px;
+    width: 100%;
+}
 
-    h4 {
-        font-family: 'Roboto', sans-serif;
-        font-size: 3.5rem;
-        font-weight: 500;
-        padding-bottom: 2px;
-        color: #006154;
-        
-    }
-
-    h5 {
-        font-size: 2.3rem;
-    }
-
-    h3 {
-        font-size: 5rem;
-        font-weight: 300;
-        color: #00A390;
-    }
-
-    h1, h2 {
-        font-family: 'Roboto', sans-serif;
-        
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    h2 {
-        font-size: 3rem;
-    }
-
-    p {
-        font-family: 'Roboto', sans-serif; 
-        font-weight: 300;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-    }
-
-    .projectSection p {
-        color: #595454; 
-    }
-
-    // MISC
-
-    .sr-only {
-        border: 0;
-        clip: rect(0, 0, 0, 0);
-        height: 1px;  margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-    }
-
-    @mixin center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;  
-    }
-
-    // GLOBALS
-
-    .wrapper {
-        margin: 0 auto;
-        @include center;
-        max-width: 1100px;
-        width: 100%;
-    }
-
-    html {
-        font-size: 62.5%;
-    }
+html {
+    font-size: 62.5%;
+}
 
 // HOVER AND FOCUS STYLES
 
@@ -120,123 +103,126 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 // PROJECT SECTION
 // PROJECT SECTION
 
-    textarea:focus,
-    input:focus,
-    a:focus {
-        outline: 1px solid $accent;
-        transform: scale(1.01);
-        outline-offset: 5px;   
+textarea:focus,
+input:focus,
+a:focus {
+    outline: 1px solid $accent;
+    transform: scale(1.01);
+    outline-offset: 5px;   
+}
+
+.projectSection .projectDiv .buttonBox a:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+// Contact
+
+.contactSection .submitButton:hover {
+    background-color: white;
+    border: 1px solid black;
+    transition: all .3s ease-out;
+} 
+
+textarea:hover {
+    border: 1px $accent;
+    transition: all 0.3s;
+}
+
+.contactIcons .logo .icon:hover {
+    color: $accent;
+    transition: all 0.3s;
+}
+
+// Icon hover styles
+
+.skills li:hover {
+    color: $accent;                  
+}
+
+// Menu tag slide hover style
+// Menu tag slide hover style
+// Menu tag slide hover style
+
+.project-list .title a {
+    color: #00A390;
+    transition: all .3s ease-out;
+    border-bottom: solid transparent 5px;
+}
+
+.slider {
+    position: absolute;
+    display:block;
+    left: 0;
+    top: 90%;
+    margin: 0 auto;
+    height: 4px;
+    background-color: #00A390;
+    width: 0%;
+    transition: width 0.5s ease-out;
+}
+
+.nombore {
+    position:relative;
+    display:inline-block;
+    transition: all 0.3s ease-out;
+}
+
+.nombore:hover .slider {
+    width: 100%;
+}
+
+// Fade in hover animation for project buttons
+
+.slider:hover {
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
     }
 
-    .projectSection .projectDiv .buttonBox a:hover {
-        background-color: white;
-        border: 1px solid black;
-        color: black;
-    }
+// Loading animation
 
-    .contactSection .submitButton:hover {
-        background-color: white;
-        border: 1px solid black;
-        transition: all .3s ease-out;
-    } 
-
-    // Input hover styles
-
-    textarea:hover {
-        border: 1px $accent;
-        transition: all 0.3s;
-    }
-
-    .contactIcons .logo .icon:hover {
-        color: $accent;
-        transition: all 0.3s;
-    }
-
-    // Icon hover styles
-
-    .skills li:hover {
-        color: $accent;                  
-    }
-
-    // Menu tag slide hover style
-    // Menu tag slide hover style
-    // Menu tag slide hover style
-
-    .project-list .title a {
-        color: #00A390;
-        transition: all .3s ease-out;
-        border-bottom: solid transparent 5px;
-    }
-    .slider {
-        position: absolute;
-        display:block;
-        left: 0;
-        top: 90%;
-        margin: 0 auto;
-        height: 4px;
-        background-color: #00A390;
-        width: 0%;
-        transition: width 0.5s ease-out;
-    }
-    .nombore {
-        position:relative;
-        display:inline-block;
-        transition: all 0.3s ease-out;
-    }
-    .nombore:hover .slider {
-        width: 100%;
-    }
-
-    // Fade in hover animation for project buttons
-
-    .slider:hover {
-        animation: fadeIn linear 1s;
-        -webkit-animation: fadeIn linear 1s;
-        -moz-animation: fadeIn linear 1s;
-        -o-animation: fadeIn linear 1s;
-        -ms-animation: fadeIn linear 1s;
-    }
-
-    @keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-moz-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-webkit-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-o-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-        
-        @-ms-keyframes fadeIn {
-        0% {opacity:0;}
-        100% {opacity:1;}
-        }
-
-    // Loading animation
-
-    .loadingContainer {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1000;
-        // background: rgba(black, 0.8);
+.loadingContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    // background: rgba(black, 0.8);
 }
 
 .loader {

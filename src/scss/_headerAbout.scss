@@ -65,8 +65,6 @@ header {
         }
     }
 
-   
-
     div {
 
         p {
@@ -115,7 +113,6 @@ header {
         color: black;
         text-align: center;
     } 
-    
 }
 
 // ABOUT SECTION
@@ -127,47 +124,47 @@ header {
     width: 100%;
     background: $offWhite;
     
-
-    p {
-        color: #ffffff;
-        width: 100%;
-        line-height: 3rem;
-    }
-
-    h3 {
-        color: #00EBCF;
-    }
-
- .wrapper {
-    display: flex;
-    flex-direction: row;
-    margin: 0px;
-    max-width: 1440px;
-    align-items: stretch;
-    
-
-        .heroImgDiv  {
-        width: 30%; 
-        }
-
-        img {
-        width: 100%;
-        display: block;
-        flex-shrink: 0;
-        height: 100%;
-        object-fit: cover;
-        }
-     
-
-    .aboutContainer {
-        width: 70%;
-        background: #006154;
-        padding: 40px;
+    .wrapper {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 65px;
+        flex-direction: row;
+        margin: 0px;
+        max-width: 1440px;
+        align-items: stretch;
+        
+
+            .heroImgDiv  {
+            width: 30%; 
+            // background-image: url('./cosmetics/heroPhoto.png');
+            }
+
+            img {
+            width: 100%;
+            display: block;
+            flex-shrink: 0;
+            height: 100%;
+            object-fit: cover;
+            }
+        
+
+        .aboutContainer {
+            width: 70%;
+            background: #006154;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 65px;
+
+            h3 {
+                color: #00EBCF;
+            }
+
+            p {
+                color: #ffffff;
+                width: 100%;
+                line-height: 3rem;
+            }
 
             a {
                 text-decoration: none;
@@ -209,13 +206,13 @@ header {
     padding-bottom: 20px;
     padding-top: 50px;
 
-    ul {
-        justify-content: center;
-    }
-
         .wrapper {
             flex-direction: column;
             margin-top: 0px;
+           
+            ul {
+                justify-content: center;
+            }
 
             .logoDiv {
                 width: 45%;
@@ -225,7 +222,6 @@ header {
                 margin: 20px 0px 20px 0px;
             }
         }
-        
     }
     
     .about .wrapper {
@@ -236,6 +232,7 @@ header {
     }
 
     .about {
+
         .wrapper {
                 
             .aboutContainer {
@@ -260,13 +257,12 @@ header {
         .wrapper {
             width: 100%;
             
-                nav {
-                    width: 100%;
-                    
-                }
+            nav {
+                width: 100%;
+                
             }
+        }
     }
-
 }
 
 @media (max-width: 480px) {
@@ -285,9 +281,13 @@ header {
     header ul {
         justify-content: space-around;
         width: 90%;
+
+        a {
+            margin-bottom: 20px;
+        }
     }
 
-.about {
+    .about {
 
         .aboutContainer {
 
@@ -299,8 +299,6 @@ header {
                 font-size: 1.6rem;
             }
         }
-
-
     }
 }
 
@@ -330,13 +328,10 @@ header {
     header ul {
     flex-wrap: wrap; 
 
-
         a {
             font-size: 2.3rem;
-            
         }
     }
-
 }
 
 
