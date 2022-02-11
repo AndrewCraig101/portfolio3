@@ -1,4 +1,6 @@
-import image from './cosmetics/heroPhoto.jpg';
+import image from './cosmetics/heroPhoto.png';
+
+// import image6 from './cosmetics/mail.png';
 
 
 const About = () => {
@@ -14,6 +16,12 @@ const About = () => {
                 <div className="heroImgDiv">
                     <img src={image} alt="The developer smiling into camera"/>
                 </div>
+
+                 {/* <div className="heroImgDiv"  styles={{ backgroundImage:`url(${image})` }}>
+                </div> */}
+
+                {/* <div className="heroImgDiv">
+                </div> */}
                  
                 <div className="aboutContainer">
                     <h3>About Me</h3>

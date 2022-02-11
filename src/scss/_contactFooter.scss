@@ -194,27 +194,27 @@ footer {
     }    
 }
 
-    @media (max-width: 480px) {
+ @media (max-width: 480px) {
+     
+    .contactIcons {
+    width: 92%;
+    }
+
+
+    .contactBox {
+
+        .formBox {
+            width: 80%;
+        }
+
+        textarea {
+            width: 80%;
+        }
+
         .contactIcons {
-        width: 92%;
+            width: 80%;
         }
-
-
-        .contactBox {
-
-            .formBox {
-                width: 80%;
-            }
-
-            textarea {
-                width: 80%;
-            }
-
-            .contactIcons {
-                width: 80%;
-            }
-        }
-
+    }
 }
 
 @media (max-width: 380px) { 
