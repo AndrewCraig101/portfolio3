@@ -1,0 +1,50 @@
+
+
+.emailSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        font-size: 4.5rem;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    .emailWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .emailContainer {
+            display: flex;
+            justify-content: space-around;
+            
+            img {
+                width: 25%;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 900px) {
+
+}
+
+    @media (max-width: 420px) {
+
+}
+
+    @media (max-width: 400px) {
+
+     
+}

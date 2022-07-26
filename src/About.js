@@ -25,8 +25,8 @@ const About = () => {
                  
                 <div className="aboutContainer">
                     <h3>About Me</h3>
-                    <p>Hello, my name is Andrew, I’m a Front End Web Developer based in Toronto. I am passionate about creating detailed, efficient and well styled work that is accessible and responsive. I’m also interested in workflow speed (Emmet, SCSS and React) and programming knowledge that saves time. I mainly work in agile environments doing paired programming, group projects or working alone. I’m self motivated and dedicated to learning and growing in the industry. Outside of work I play guitar and read sci fi books. I’ve also recorded over 60 songs! Please feel free to <a href="#contact">contact me!</a> 
-                    </p>
+                    <p>Hello, my name is Andrew, I’m a Front End Web Developer based in Toronto. I am passionate about creating detailed, efficient and well styled work that is accessible and responsive. I’m also interested in workflow speed (Emmet, SCSS and React) and programming knowledge that saves time. I mainly work in agile environments doing paired programming, group projects or working alone. I’m self motivated and dedicated to learning and growing in the industry. I've just started the <a href="https://launchschool.com/">Launch School</a> full stack curriculum part time. Outside of work I play guitar and read sci fi. I’ve recorded over 60 songs! Please feel free to <a href="#contact">contact me!</a> 
+                    </p> 
                 </div>
             </div>
         </section>     

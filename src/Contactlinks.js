@@ -60,6 +60,15 @@ function ContactLinks() {
                     <span class="sr-only">Open resume pdf</span>
                     </a>
 
+                    {/* <a href={resume} aria-label="Reference Letter">
+                    <span class="sr-only">Opens in a new window</span>
+                <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                  <img src={image2} className="icon" alt="A logo link for resume"/>
+                  <span className="tooltiptext">Reference Letter (DeckerMed)</span>
+                </div>
+                    <span class="sr-only">Open resume pdf</span>
+                    </a> */}
+
                     <a href="https://github.com/AndrewCraig101" aria-label="Github">
                     <span class="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
