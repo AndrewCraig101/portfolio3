@@ -4,6 +4,9 @@ import image2 from './assets/p2.png'
 import image3 from './assets/p3.png'
 import image4 from './assets/p4.png'
 import React from 'react';
+import email from './assets/email1.png'
+import email2 from './assets/email2.png'
+import email3 from './assets/email3.png'
 
 // import background from "assets/3back.png";
 
@@ -18,20 +21,23 @@ return (
 
         <div className="wrapper">
             <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >Projects</h3>
-            {/* <div className="projectDiv">
-                <div className="projectImgBox">
-                    <img src={} alt=""/>
-                    </div>
-                <div className="projectInside">
-                    <h4>Tarantino vs Richie</h4>
-                    <p>Is Guy Richie the UK Quentin Tarantino? is Tarantino the USA Richie? Find out as we examine both legendary directors. React, SCSS, API's.</p>
-                    <p>Collaboration with</p>
-                    <div className="buttonBox">
-                        <button>Live </button>
-                        <button>Git</button>
-                    </div>
+
+            {/* <div className="projectInside">
+                    <h4>Email Development</h4>
+                    <p>medical curriculum company, <a className="deckerLink" href="https://deckerip.com/">DeckerMed</a></p>
+                <div className="projectDiv">
+                    <div className="emailDevBox projectImgBox">
+                    <div className="div1"><img src={email2} alt="email"/></div>
+                    <div><img src={email} alt="email"/></div> 
+                    <div className="div2"><img src={email3} alt="email"/></div>                    
+                        </div>
                 </div>
-            </div> */}
+                   <p>Fourteen emails in table oriented HTML, and python based template language Django. Includes dynamic code for customized client names, subscription dates, purchase deadlines and membership details. Compatible with over 30 email mailboxes and tested using <a href="https://testi.at/">Testi.com</a></p>
+                    <div className="buttonBox">
+                        <a href="">View Emails Page</a>
+                    </div>
+                </div> */}
+          
 
             <div className="projectDiv one" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
                     <h4>NBA Codestars</h4>
@@ -40,6 +46,8 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>A database of NBA teams and players. <span>Javascript, JSModules, API and SCSS.</span></p>
+                    <p>Senior Developer: Kaunain Karmali</p>
+                    <p>Junior Developer: Andrew Craig</p>
                 </div>
                 <div className="buttonBox">
                     <a href="https://nbscodestars.netlify.app/">Website</a>
@@ -54,6 +62,9 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>Trivia game with timer. <span>React with API and Firebase.</span> Create multiple player avatars and save to a score leaderboard.</p>
+                    <p>Senior Programmer: Gavyn Holt</p>
+                    <p>Junior Programmers: Andrew Craig, Munira Qazi and Denzel ST</p>
+
                 </div>
                 <div className="buttonBox">
                     <a href="https://triviatimeac.netlify.app/">Website</a>
@@ -66,6 +77,7 @@ return (
                 <div className="projectImgBox"><img src={image4} alt="The website Oscar Finder running on a laptop and mobile phone. A drop down menu displays year."/></div>
                 <div className="projectInside">
                     <p>Draws Oscar winners by year from <span>JSON data inside Firebase</span></p>
+                    <p>Junior Programmer: Andrew Craig</p>
                 </div>
                 <div className="buttonBox">
                         <a href="https://oscarfinder.netlify.app/">Website</a>
@@ -80,6 +92,7 @@ return (
                     </div>
                 <div className="projectInside">
                     <p>Inspired by magnetic fridge poetry. Employs <span>drag and drop functionality, form autocomplete from the Datamuse API and Firebase</span>.</p>
+                    <p>Group project shared by Andrew Craig, Michael Campbell, Blaire Porter and Aaliyah Beckford</p>
                 </div>
                 <div className="buttonBox">
                     <a href="https://refrigerationversification.netlify.app/">Website</a>
@@ -109,6 +122,8 @@ return (
 }
 
 export default Projects;
+
+// Is Guy Richie the UK Quentin Tarantino? is Tarantino the USA Richie? Find out as we examine both legendary directors. React, SCSS, API's.
 
 
 
