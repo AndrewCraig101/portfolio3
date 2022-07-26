@@ -85,15 +85,5 @@ const Skills = () => {
 
 export default Skills;
 
-{/* <FontAwesomeIcon icon="fa-brands fa-figma" />
 
-<FontAwesomeIcon icon="fa-brands fa-jira" />
-
-<FontAwesomeIcon icon="fa-solid fa-square-envelope" />
-
-
-<li data-aos="flip-left" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
-<FontAwesomeIcon icon={faFigma} className="icon"></FontAwesomeIcon>
-<p>Figma</p>
-</li> */}
 
