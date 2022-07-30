@@ -7,7 +7,7 @@ import Skills from './Skills.js';
 import Contactform from './Contactform.js'
 import Contactlinks from './Contactlinks.js';
 import Footer from './Footer.js';
-import Emails from './Emails.js';
+// import Emails from './Emails.js';
 // import Spinner from './Spinner.js';
 
 
