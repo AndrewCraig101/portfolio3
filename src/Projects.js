@@ -42,7 +42,7 @@ return (
                     <div className="div2"><img src={email3} alt="email"/></div>                    
                         </div>
                 </div>
-                   <p>Fourteen emails in table oriented HTML, and python based template language Django. Includes dynamic code for customized client names, subscription dates, purchase deadlines and membership details. Compatible with over 30 email mailboxes and tested using <a href="https://testi.at/">Testi.com</a></p>
+                   <p>Fourteen React created emails in table oriented HTML, inline styling and python based template language Django. Includes dynamic code for customized client names, subscription dates, purchase deadlines and membership details. Compatible with over 30 email mailboxes and tested using <a href="https://testi.at/">Testi.com</a></p>
                    
                     <Routes>
                        <Route path="/" component={Emails} />
