@@ -7,12 +7,15 @@ import Skills from './Skills.js';
 import Contactform from './Contactform.js'
 import Contactlinks from './Contactlinks.js';
 import Footer from './Footer.js';
-// import Emails from './Emails.js';
-// import Spinner from './Spinner.js';
+import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
 
+// import { Link } from 'react-router-dom';
+// import Spinner from './Spinner.js';
 
 import './sass/app.scss';
 import 'aos/dist/aos.css'; 
+
+
 
 function App() {
   return (
@@ -21,7 +24,9 @@ function App() {
       <Header />
       <main>
         <About />
+      <BrowserRouter>
         <Projects />
+      </BrowserRouter>
         <Skills />
         <div className="contactSection" id="contact">
           <Contactform />
@@ -29,7 +34,6 @@ function App() {
         </div>
       </main>
       <Footer />
-      {/* <Emails /> */}
     </>
   );
 }

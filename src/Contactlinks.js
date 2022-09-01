@@ -27,7 +27,7 @@ function ContactLinks() {
             <div className="contactIcons">
 
                     <a href="https://www.linkedin.com/in/andrew-craig-6220a5194/" aria-label="Email">
-                      <span class="sr-only">Opens in a new window</span>
+                      <span className="sr-only">Opens in a new window</span>
                       <div className="tooltip logo logo1" 
                       data-aos="flip-left" 
                       data-aos-duration="3000" 
@@ -39,7 +39,7 @@ function ContactLinks() {
                     </a>
 
                     <a href="mailto:info@andrewcraigdev.com" aria-label="Email">
-                      <span class="sr-only">Opens in a new window</span>
+                      <span className="sr-only">Opens in a new window</span>
                       <div className="tooltip logo"
                         data-aos="flip-left" 
                         data-aos-duration="3000" 
@@ -48,43 +48,43 @@ function ContactLinks() {
                         <img src={image6} className="icon" alt="A logo link for email"/>
                         <span className="tooltiptext">Email</span>
                       </div>
-                      <span class="sr-only">Open email window</span>
+                      <span className="sr-only">Open email window</span>
                     </a>
 
                     <a href={resume} aria-label="Resume">
-                    <span class="sr-only">Opens in a new window</span>
+                    <span className="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   <img src={image2} className="icon" alt="A logo link for resume"/>
                   <span className="tooltiptext">Resume</span>
                 </div>
-                    <span class="sr-only">Open resume pdf</span>
+                    <span className="sr-only">Open resume pdf</span>
                     </a>
 
                     {/* <a href={resume} aria-label="Reference Letter">
-                    <span class="sr-only">Opens in a new window</span>
+                    <span className="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   <img src={image2} className="icon" alt="A logo link for resume"/>
                   <span className="tooltiptext">Reference Letter (DeckerMed)</span>
                 </div>
-                    <span class="sr-only">Open resume pdf</span>
+                    <span className="sr-only">Open resume pdf</span>
                     </a> */}
 
                     <a href="https://github.com/AndrewCraig101" aria-label="Github">
-                    <span class="sr-only">Opens in a new window</span>
+                    <span className="sr-only">Opens in a new window</span>
                 <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                   <img src={image5} className="icon" alt="A logo link for github"/>
                   <span className="tooltiptext">Github</span>
                 </div>
-                    <span class="sr-only">Navigate to GitHub profile</span>                  
+                    <span className="sr-only">Navigate to GitHub profile</span>                  
                     </a>
 
                   <a href="https://twitter.com/andrewcraig101" aria-label="Twitter">
-                    <span class="sr-only">Opens in a new window</span>
+                    <span className="sr-only">Opens in a new window</span>
                     <div className="tooltip logo" data-aos="flip-left" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
                       <img src={image3} className="icon" alt="A logo link for Twitter"/>
                     <span className="tooltiptext">Twitter</span>
                     </div>
-                    <span class="sr-only">Navigate to Twitter profile</span>                  
+                    <span className="sr-only">Navigate to Twitter profile</span>                  
                   </a>
             </div>
         </div>
