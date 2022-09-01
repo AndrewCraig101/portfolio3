@@ -8,11 +8,21 @@ import email from './assets/email1.png'
 import email2 from './assets/email2.png'
 import email3 from './assets/email3.png'
 
+import { BrowserRouter, Link, Routes, Route, Router } from 'react-router-dom';
+import Emails from './Emails.js'
+
+
 // import background from "assets/3back.png";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
+
+// const Emails = () => {
+//     <div className="buttonBox">
+//     <Link to="/Emails">View Emails Page</Link>
+//   </div>
+//   }
 
 
 const Projects = () => {
@@ -22,7 +32,7 @@ return (
         <div className="wrapper">
             <h3 data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50" >Projects</h3>
 
-            {/* <div className="projectInside">
+            <div className="projectInside">
                     <h4>Email Development</h4>
                     <p>medical curriculum company, <a className="deckerLink" href="https://deckerip.com/">DeckerMed</a></p>
                 <div className="projectDiv">
@@ -33,10 +43,12 @@ return (
                         </div>
                 </div>
                    <p>Fourteen emails in table oriented HTML, and python based template language Django. Includes dynamic code for customized client names, subscription dates, purchase deadlines and membership details. Compatible with over 30 email mailboxes and tested using <a href="https://testi.at/">Testi.com</a></p>
-                    <div className="buttonBox">
-                        <a href="">View Emails Page</a>
-                    </div>
-                </div> */}
+                   
+                    <Routes>
+                       <Route path="/" component={Emails} />
+                    </Routes>
+                   
+                </div>
           
 
             <div className="projectDiv one" data-aos="fade-up" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-delay="50">
